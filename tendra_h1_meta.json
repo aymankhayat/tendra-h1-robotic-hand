@@ -1,0 +1,94 @@
+{
+ "product": "TENDRA-H1",
+ "clip_frames": 60,
+ "fps": 30,
+ "controls": [
+  "Explode",
+  "Curl_Index",
+  "Curl_Middle",
+  "Curl_Ring",
+  "Curl_Little",
+  "Spread",
+  "PalmCup",
+  "ThumbCurl",
+  "ThumbOpposition",
+  "WristPitch",
+  "WristYaw"
+ ],
+ "wrist_pitch_range": [
+  -60.0,
+  70.0
+ ],
+ "wrist_yaw_range": [
+  -30.0,
+  20.0
+ ],
+ "fingers": [
+  "Index",
+  "Middle",
+  "Ring",
+  "Little"
+ ],
+ "presets": {
+  "Open": {
+   "Curl_Index": 0.0,
+   "Curl_Middle": 0.0,
+   "Curl_Ring": 0.0,
+   "Curl_Little": 0.0,
+   "ThumbCurl": 0.0,
+   "ThumbOpposition": 0.0,
+   "Spread": 0.35,
+   "PalmCup": 0.0
+  },
+  "Fist": {
+   "Curl_Index": 1.0,
+   "Curl_Middle": 1.0,
+   "Curl_Ring": 1.0,
+   "Curl_Little": 1.0,
+   "ThumbCurl": 0.6,
+   "ThumbOpposition": 0.0,
+   "Spread": 0.0,
+   "PalmCup": 0.7
+  },
+  "Pinch": {
+   "Curl_Index": 0.55,
+   "Curl_Middle": 0.35,
+   "Curl_Ring": 0.3,
+   "Curl_Little": 0.25,
+   "ThumbCurl": 0.35,
+   "ThumbOpposition": 0.85,
+   "Spread": 0.1,
+   "PalmCup": 0.2
+  },
+  "Point": {
+   "Curl_Index": 0.0,
+   "Curl_Middle": 1.0,
+   "Curl_Ring": 1.0,
+   "Curl_Little": 1.0,
+   "ThumbCurl": 0.85,
+   "ThumbOpposition": 0.1,
+   "Spread": 0.0,
+   "PalmCup": 0.5
+  },
+  "Power Grip": {
+   "Curl_Index": 0.62,
+   "Curl_Middle": 0.65,
+   "Curl_Ring": 0.68,
+   "Curl_Little": 0.72,
+   "ThumbCurl": 0.2,
+   "ThumbOpposition": 0.2,
+   "Spread": 0.0,
+   "PalmCup": 0.6
+  },
+  "OK Sign": {
+   "Curl_Index": 0.55,
+   "Curl_Middle": 0.05,
+   "Curl_Ring": 0.08,
+   "Curl_Little": 0.12,
+   "ThumbCurl": 0.3,
+   "ThumbOpposition": 0.9,
+   "Spread": 0.6,
+   "PalmCup": 0.1
+  }
+ }
+}
