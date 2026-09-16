@@ -1,5 +1,7 @@
 # TENDRA-H1 — Parametric Robotic Hand
 
+**Designed & built by [Ayman Khayat](https://www.linkedin.com/in/ayman-khayat-350b4b335)** · [LinkedIn](https://www.linkedin.com/in/ayman-khayat-350b4b335)
+
 A fully articulated, tendon-driven robotic hand generated **entirely from one Python script** in Blender, with an interactive exploded view, part callouts, a posable rig with grasp presets, an auto-generated BOM and mass and cost estimate, and a browser viewer you can explode and pose.
 
 **Live demo:** [Live Demo](https://aymankhayat.github.io/tendra-h1-robotic-hand/)
@@ -73,6 +75,11 @@ No environment variables are required.
 
 **Why drivers don't go to the web directly:** Blender custom-property drivers are not part of glTF. The exporter bakes each control (explode, each finger curl, spread, cup, thumb, wrist) into a separate NLA track over frames 0–60. The viewer strips the static tracks Blender samples into every clip, then sets each clip's time from its slider, so the controls combine independently.
 
+## Author
+
+**Ayman Khayat**: design, parametric generator, rig, verification pipeline, renders and website.
+[LinkedIn](https://www.linkedin.com/in/ayman-khayat-350b4b335) · [GitHub](https://github.com/aymankhayat)
+
 ## License
 
-MIT
+MIT © Ayman Khayat
