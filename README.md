@@ -2,7 +2,7 @@
 
 A fully articulated, tendon-driven robotic hand generated **entirely from one Python script** in Blender, with an interactive exploded view, part callouts, a posable rig with grasp presets, an auto-generated BOM and mass and cost estimate, and a browser viewer you can explode and pose.
 
-**Live demo:** [Live Demo](DEMO_LINK_PLACEHOLDER)
+**Live demo:** [Live Demo](https://aymankhayat.github.io/tendra-h1-robotic-hand/)
 
 ![Screenshot](docs/screenshot.png)
 
