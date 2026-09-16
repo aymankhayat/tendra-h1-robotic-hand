@@ -2,6 +2,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>TENDRA-H1 Robotic Hand</title>
 <meta name="description" content="A 25-joint tendon-driven robotic hand generated from one parametric Blender script. Explode it, pose it and inspect every part in the browser.">
+<link rel="canonical" href="https://aymankhayat.github.io/tendra-h1-robotic-hand/">
+<meta name="author" content="Ayman Khayat">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TENDRA-H1">
+<meta property="og:title" content="TENDRA-H1: a robotic hand generated from one Python script">
+<meta property="og:description" content="25 joints, 309 parts, zero interferences. Explode it, pose it and inspect every part in 3D. Designed and built by Ayman Khayat.">
+<meta property="og:url" content="https://aymankhayat.github.io/tendra-h1-robotic-hand/">
+<meta property="og:image" content="https://aymankhayat.github.io/tendra-h1-robotic-hand/assets/og_card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="TENDRA-H1 robotic hand with glowing joint rings and project stats">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://aymankhayat.github.io/tendra-h1-robotic-hand/assets/og_card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -257,6 +270,22 @@
   .cta-field:hover .go svg { transform: translateX(4px); }
   .cta-sub { margin-top: 10px; font: 500 13px var(--mono); color: rgba(255,255,255,.85); }
 
+  /* ---------- engineering notes ---------- */
+  .notes-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; padding-block: clamp(70px, 9vw, 120px) 36px; }
+  .notes-head h2 { font-size: clamp(34px, 4.6vw, 62px); line-height: .98; font-weight: 700; letter-spacing: -.03em; text-transform: uppercase; }
+  .notes-head h2 span { color: transparent; -webkit-text-stroke: 1.2px #77777f; }
+  .notes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding-bottom: clamp(70px, 9vw, 120px); }
+  .note { position: relative; display: grid; align-content: start; gap: 14px; padding: 26px 22px 24px; border-radius: 16px; background: #131316; border: 1px solid #24242b; overflow: hidden; transition: border-color .3s, transform .3s; }
+  .note::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: linear-gradient(90deg, var(--blue), var(--violet), var(--pink)); opacity: .8; }
+  .note:hover { border-color: #3a3a48; transform: translateY(-3px); }
+  .note .k { font: 500 11px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted-dark); }
+  .note .metric { font: 700 clamp(28px, 2.6vw, 40px)/1 var(--display); letter-spacing: -.03em; color: #fff; }
+  .note .metric small { font-size: .5em; color: #b9b2ff; font-weight: 600; letter-spacing: 0; }
+  .note h3 { font-size: 17px; font-weight: 600; line-height: 1.3; }
+  .note p { color: var(--muted-dark); font-size: 14px; }
+  @media (max-width: 1100px) { .notes { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .notes { grid-template-columns: 1fr; } }
+
   /* ---------- builder ---------- */
   .builder { position: relative; overflow: hidden; }
   .builder .rings { width: 30vw; min-width: 240px; right: -6vw; top: -8vw; z-index: 0; }
@@ -314,7 +343,7 @@
         TENDRA
       </a>
       <div class="nav-links">
-        <a href="#engineering">Engineering</a><a href="#lab">Live Lab</a><a href="#grasps">Grasps</a><a href="#specs">Specs</a><a href="#builder">Builder</a><a href="#source">Source</a>
+        <a href="#engineering">Engineering</a><a href="#lab">Live Lab</a><a href="#grasps">Grasps</a><a href="#notes">Case study</a><a href="#specs">Specs</a><a href="#builder">Builder</a><a href="#source">Source</a>
       </div>
     </nav>
     <div class="hero-copy">
@@ -444,6 +473,42 @@
       <p>Nothing was modelled by hand. Change the scale, finger length, palm width or finger count and the script rebuilds every link, joint, tendon, label and driver, then re-verifies it. The three-finger gripper on the left came out of the same file.</p>
       <div class="params"><code>hand_scale</code><code>finger_length_ratio</code><code>palm_width_mm</code><code>num_fingers</code></div>
       <a class="pill" href="#source" style="background:#2a2a30">See the code <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ENGINEERING NOTES ============================== -->
+<section class="dark" id="notes">
+  <div class="wrap">
+    <div class="notes-head" data-reveal>
+      <div style="display:grid;gap:14px"><div class="eyebrow">Case study</div><h2>Engineering <span>Notes</span></h2></div>
+      <a class="pill" href="https://github.com/aymankhayat/tendra-h1-robotic-hand/blob/main/CASE_STUDY.md" target="_blank" rel="noopener" style="background:#2a2a30">Read the full case study <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </div>
+    <div class="notes">
+      <article class="note" data-reveal>
+        <span class="k">01 · Kinematics</span>
+        <div class="metric">0 <small>mm penetration</small></div>
+        <h3>A thumb that really opposes</h3>
+        <p>A forward-kinematics search over the CMC rotations replaced guesswork, then 441 configurations per grasp were checked for collision-free thumb values.</p>
+      </article>
+      <article class="note" data-reveal>
+        <span class="k">02 · Verification</span>
+        <div class="metric">64 &rarr; 0 <small>false flags</small></div>
+        <h3>A collision checker you can trust</h3>
+        <p>Normal-based tests gave way to ray-parity voting per solid island. A known-bad pose still gets caught at 2.2 mm, and four real clashes were found and fixed.</p>
+      </article>
+      <article class="note" data-reveal>
+        <span class="k">03 · Web pipeline</span>
+        <div class="metric">8.5&deg; &rarr; 85&deg;</div>
+        <h3>Blender drivers, rebuilt for glTF</h3>
+        <p>Eleven controls were baked into separate clips. Stripping the static bone tracks the exporter adds fixed the clips averaging each other out.</p>
+      </article>
+      <article class="note" data-reveal>
+        <span class="k">04 · Rendering</span>
+        <div class="metric">100&times; <small>light recalibration</small></div>
+        <h3>Photoreal at true scale</h3>
+        <p>A lights-off / lights &divide;100 test isolated overexposure at real-world size. The HDRI was desaturated to reflections only, with a single emissive accent.</p>
+      </article>
     </div>
   </div>
 </section>
