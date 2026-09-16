@@ -1,0 +1,313 @@
+{
+  "product": "TENDRA-H1",
+  "params": {
+    "hand_scale": 1.0,
+    "finger_length_ratio": 1.0,
+    "palm_width_mm": 84.0,
+    "num_fingers": 4,
+    "explode_distance_mm": 13.0,
+    "bevel": true
+  },
+  "dimensions": {
+    "width_mm": 151.7,
+    "thickness_mm": 68.6,
+    "length_mm": 298.0,
+    "min": [
+      -52.9,
+      -51.6,
+      -108.0
+    ],
+    "max": [
+      98.8,
+      17.0,
+      190.0
+    ]
+  },
+  "joints_total": 25,
+  "dof_total": 25,
+  "actuators_total": 10,
+  "actuators": [
+    "Index Flexor",
+    "Middle Flexor",
+    "Ring Flexor",
+    "Little Flexor",
+    "Thumb Flexor",
+    "Thumb Opposition",
+    "Finger Spread",
+    "Palm Cup",
+    "Wrist Pitch",
+    "Wrist Yaw"
+  ],
+  "actuation": "Tendon-driven (Dyneema \u00d81.0 over grooved pulleys), under-actuated coupled flexion, elastic extension",
+  "joints": [
+    {
+      "joint": "Index MCP abduction",
+      "min_deg": -20.0,
+      "max_deg": 20.0,
+      "actuator": "Finger Spread"
+    },
+    {
+      "joint": "Index MCP flexion",
+      "min_deg": -10.0,
+      "max_deg": 90.0,
+      "actuator": "Index Flexor"
+    },
+    {
+      "joint": "Index PIP flexion",
+      "min_deg": -5.0,
+      "max_deg": 110.0,
+      "actuator": "Index Flexor (coupled)"
+    },
+    {
+      "joint": "Index DIP flexion",
+      "min_deg": -10.0,
+      "max_deg": 80.0,
+      "actuator": "Index Flexor (coupled)"
+    },
+    {
+      "joint": "Middle MCP abduction",
+      "min_deg": -20.0,
+      "max_deg": 20.0,
+      "actuator": "Finger Spread"
+    },
+    {
+      "joint": "Middle MCP flexion",
+      "min_deg": -10.0,
+      "max_deg": 90.0,
+      "actuator": "Middle Flexor"
+    },
+    {
+      "joint": "Middle PIP flexion",
+      "min_deg": -5.0,
+      "max_deg": 110.0,
+      "actuator": "Middle Flexor (coupled)"
+    },
+    {
+      "joint": "Middle DIP flexion",
+      "min_deg": -10.0,
+      "max_deg": 80.0,
+      "actuator": "Middle Flexor (coupled)"
+    },
+    {
+      "joint": "Ring CMC (cupping)",
+      "min_deg": 0.0,
+      "max_deg": 15.0,
+      "actuator": "Palm Cup"
+    },
+    {
+      "joint": "Ring MCP abduction",
+      "min_deg": -20.0,
+      "max_deg": 20.0,
+      "actuator": "Finger Spread"
+    },
+    {
+      "joint": "Ring MCP flexion",
+      "min_deg": -10.0,
+      "max_deg": 90.0,
+      "actuator": "Ring Flexor"
+    },
+    {
+      "joint": "Ring PIP flexion",
+      "min_deg": -5.0,
+      "max_deg": 110.0,
+      "actuator": "Ring Flexor (coupled)"
+    },
+    {
+      "joint": "Ring DIP flexion",
+      "min_deg": -10.0,
+      "max_deg": 80.0,
+      "actuator": "Ring Flexor (coupled)"
+    },
+    {
+      "joint": "Little CMC (cupping)",
+      "min_deg": 0.0,
+      "max_deg": 15.0,
+      "actuator": "Palm Cup"
+    },
+    {
+      "joint": "Little MCP abduction",
+      "min_deg": -20.0,
+      "max_deg": 20.0,
+      "actuator": "Finger Spread"
+    },
+    {
+      "joint": "Little MCP flexion",
+      "min_deg": -10.0,
+      "max_deg": 90.0,
+      "actuator": "Little Flexor"
+    },
+    {
+      "joint": "Little PIP flexion",
+      "min_deg": -5.0,
+      "max_deg": 110.0,
+      "actuator": "Little Flexor (coupled)"
+    },
+    {
+      "joint": "Little DIP flexion",
+      "min_deg": -10.0,
+      "max_deg": 80.0,
+      "actuator": "Little Flexor (coupled)"
+    },
+    {
+      "joint": "Thumb CMC flexion",
+      "min_deg": -10.0,
+      "max_deg": 65.0,
+      "actuator": "Thumb Opposition"
+    },
+    {
+      "joint": "Thumb CMC axial rotation",
+      "min_deg": -20.0,
+      "max_deg": 55.0,
+      "actuator": "Thumb Opposition (coupled)"
+    },
+    {
+      "joint": "Thumb CMC abduction",
+      "min_deg": -30.0,
+      "max_deg": 75.0,
+      "actuator": "Thumb Opposition (coupled)"
+    },
+    {
+      "joint": "Thumb MCP flexion",
+      "min_deg": -10.0,
+      "max_deg": 60.0,
+      "actuator": "Thumb Flexor"
+    },
+    {
+      "joint": "Thumb IP flexion",
+      "min_deg": -15.0,
+      "max_deg": 80.0,
+      "actuator": "Thumb Flexor (coupled)"
+    },
+    {
+      "joint": "Wrist pitch",
+      "min_deg": -60.0,
+      "max_deg": 70.0,
+      "actuator": "Wrist Pitch"
+    },
+    {
+      "joint": "Wrist yaw",
+      "min_deg": -20.0,
+      "max_deg": 30.0,
+      "actuator": "Wrist Yaw"
+    }
+  ],
+  "mass_g": 457.1,
+  "cost_usd": 1441.0,
+  "part_count": 309,
+  "unique_parts": 64,
+  "fingers": [
+    {
+      "name": "Index",
+      "meta_mm": 64.0,
+      "prox_mm": 42.0,
+      "mid_mm": 25.0,
+      "dist_mm": 21.0,
+      "width_mm": 16.0
+    },
+    {
+      "name": "Middle",
+      "meta_mm": 64.0,
+      "prox_mm": 46.0,
+      "mid_mm": 28.0,
+      "dist_mm": 22.0,
+      "width_mm": 16.5
+    },
+    {
+      "name": "Ring",
+      "meta_mm": 59.0,
+      "prox_mm": 43.0,
+      "mid_mm": 27.0,
+      "dist_mm": 21.0,
+      "width_mm": 15.5
+    },
+    {
+      "name": "Little",
+      "meta_mm": 52.0,
+      "prox_mm": 34.0,
+      "mid_mm": 20.0,
+      "dist_mm": 19.0,
+      "width_mm": 13.5
+    }
+  ],
+  "thumb": {
+    "meta_mm": 46.0,
+    "prox_mm": 33.0,
+    "dist_mm": 27.0
+  },
+  "presets": {
+    "Open": {
+      "curl_index": 0.0,
+      "curl_middle": 0.0,
+      "curl_ring": 0.0,
+      "curl_little": 0.0,
+      "thumb_curl": 0.0,
+      "thumb_opposition": 0.0,
+      "spread": 0.35,
+      "palm_cup": 0.0
+    },
+    "Fist": {
+      "curl_index": 1.0,
+      "curl_middle": 1.0,
+      "curl_ring": 1.0,
+      "curl_little": 1.0,
+      "thumb_curl": 0.6,
+      "thumb_opposition": 0.0,
+      "spread": 0.0,
+      "palm_cup": 0.7
+    },
+    "Pinch": {
+      "curl_index": 0.55,
+      "curl_middle": 0.35,
+      "curl_ring": 0.3,
+      "curl_little": 0.25,
+      "thumb_curl": 0.35,
+      "thumb_opposition": 0.85,
+      "spread": 0.1,
+      "palm_cup": 0.2
+    },
+    "Point": {
+      "curl_index": 0.0,
+      "curl_middle": 1.0,
+      "curl_ring": 1.0,
+      "curl_little": 1.0,
+      "thumb_curl": 0.85,
+      "thumb_opposition": 0.1,
+      "spread": 0.0,
+      "palm_cup": 0.5
+    },
+    "Power Grip": {
+      "curl_index": 0.62,
+      "curl_middle": 0.65,
+      "curl_ring": 0.68,
+      "curl_little": 0.72,
+      "thumb_curl": 0.2,
+      "thumb_opposition": 0.2,
+      "spread": 0.0,
+      "palm_cup": 0.6
+    },
+    "OK Sign": {
+      "curl_index": 0.55,
+      "curl_middle": 0.05,
+      "curl_ring": 0.08,
+      "curl_little": 0.12,
+      "thumb_curl": 0.3,
+      "thumb_opposition": 0.9,
+      "spread": 0.6,
+      "palm_cup": 0.1
+    }
+  },
+  "mass_by_assembly": {
+    "Index": 38.5,
+    "Middle": 42.3,
+    "Ring": 34.9,
+    "Little": 23.5,
+    "Thumb": 29.0,
+    "Palm": 45.9,
+    "Wrist": 14.8,
+    "Forearm": 227.2
+  },
+  "cost_by_source": {
+    "Purchased / outsourced": 1336.5,
+    "In-house print": 104.4
+  }
+}

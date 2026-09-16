@@ -1,0 +1,54 @@
+{
+ "rest_interference": [],
+ "components": 1,
+ "floating_groups": [],
+ "poses": {
+  "Open": [],
+  "Fist": [],
+  "Pinch": [],
+  "Point": [
+   [
+    "Distal Phalanx \u2014 Thumb",
+    "Proximal Phalanx \u2014 Finger 2",
+    2.22
+   ],
+   [
+    "Distal Phalanx \u2014 Thumb",
+    "Retaining Screw \u2014 Finger 2 PIP Radial",
+    2.18
+   ],
+   [
+    "Bearing \u2014 Finger 2 PIP Radial",
+    "Distal Phalanx \u2014 Thumb",
+    2.17
+   ],
+   [
+    "Distal Phalanx \u2014 Thumb",
+    "Status Light Ring \u2014 Finger 2 PIP Radial",
+    2.13
+   ],
+   [
+    "Distal Phalanx \u2014 Thumb",
+    "Middle Phalanx \u2014 Finger 2",
+    1.77
+   ],
+   [
+    "Proximal Phalanx \u2014 Finger 2",
+    "Tactile Sensor Pad \u2014 Thumb",
+    0.85
+   ],
+   [
+    "Fingertip Cap \u2014 Thumb",
+    "Proximal Phalanx \u2014 Finger 2",
+    0.79
+   ],
+   [
+    "Fingertip Cap \u2014 Thumb",
+    "Status Light Ring \u2014 Finger 2 PIP Radial",
+    0.51
+   ]
+  ],
+  "Power Grip": [],
+  "OK Sign": []
+ }
+}

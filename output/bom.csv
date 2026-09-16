@@ -1,0 +1,67 @@
+Item,Qty,Material,Source,Unit mass (g),Total mass (g),Unit cost (USD),Total cost (USD),Used in
+"Coreless DC gearmotor Ø9.5, 136:1, magnetic encoder",10,Coreless DC gearmotor + magnetic encoder,Purchased / outsourced,13.50,135.0,42.00,420.00,Forearm
+10-channel motor driver + sensor hub PCB,1,"FR-4 4-layer PCB, assembled",Purchased / outsourced,4.75,4.8,120.00,120.00,Forearm
+Capacitive tactile sensor pad,5,"Capacitive tactile array, silicone skin",Purchased / outsourced,0.07,0.4,14.00,70.00,"Index, Little, Middle, Ring, Thumb"
+"Wrist universal-joint cross, Ti-6Al-4V",1,"Ti-6Al-4V, CNC machined",Purchased / outsourced,8.40,8.4,58.00,58.00,Wrist
+"Grooved tendon pulley, 440C",14,"440C stainless, hardened & ground",Purchased / outsourced,0.46,6.5,3.50,49.00,"Index, Little, Middle, Ring, Thumb"
+"Fingertip cap, Ti-6Al-4V",5,"Ti-6Al-4V, CNC machined",Purchased / outsourced,0.73,3.7,9.00,45.00,"Index, Little, Middle, Ring, Thumb"
+"CMC socket, Ti-6Al-4V",1,"Ti-6Al-4V, CNC machined",Purchased / outsourced,2.09,2.1,42.00,42.00,Thumb
+"Tendon spool, 7075 anodised",10,"440C stainless, hardened & ground",Purchased / outsourced,1.14,11.4,4.00,40.00,Forearm
+"Forearm side rail pair, 7075-T6",1,"7075-T6 aluminium, hard-anodised",Purchased / outsourced,24.46,24.5,38.00,38.00,Forearm
+"MCP abduction yoke, Ti-6Al-4V (Index)",1,"Ti-6Al-4V, CNC machined",Purchased / outsourced,6.53,6.5,36.00,36.00,Index
+"MCP abduction yoke, Ti-6Al-4V (Middle)",1,"Ti-6Al-4V, CNC machined",Purchased / outsourced,6.95,6.9,36.00,36.00,Middle
+"MCP abduction yoke, Ti-6Al-4V (Ring)",1,"Ti-6Al-4V, CNC machined",Purchased / outsourced,6.12,6.1,36.00,36.00,Ring
+"MCP abduction yoke, Ti-6Al-4V (Little)",1,"Ti-6Al-4V, CNC machined",Purchased / outsourced,4.62,4.6,36.00,36.00,Little
+"Wrist yoke (palm side), 7075-T6",1,"7075-T6 aluminium, hard-anodised",Purchased / outsourced,2.19,2.2,34.00,34.00,Wrist
+"Wrist yoke (forearm side), 7075-T6",1,"7075-T6 aluminium, hard-anodised",Purchased / outsourced,2.44,2.4,34.00,34.00,Wrist
+Flanged ball bearing 3×8×1.4,16,"440C stainless, hardened & ground",Purchased / outsourced,0.45,7.2,1.80,28.80,"Index, Middle, Ring, Thumb"
+"Dorsal frame plate, 7075-T6 CNC",1,"7075-T6 aluminium, hard-anodised",Purchased / outsourced,15.96,16.0,28.00,28.00,Palm
+"Wrist flange, 7075-T6 CNC",1,"7075-T6 aluminium, hard-anodised",Purchased / outsourced,21.87,21.9,26.00,26.00,Forearm
+Joint status light ring (light guide + LED),28,PMMA light guide + SMD LED,Purchased / outsourced,0.01,0.2,0.90,25.20,"Index, Little, Middle, Ring, Thumb"
+"Forearm base plate, 7075-T6 CNC",1,"7075-T6 aluminium, hard-anodised",Purchased / outsourced,21.87,21.9,24.00,24.00,Forearm
+"Thumb mount bracket, 7075",1,"7075-T6 aluminium, hard-anodised",Purchased / outsourced,3.28,3.3,22.00,22.00,Palm
+Flanged thrust bearing 3×8×1.4,8,"440C stainless, hardened & ground",Purchased / outsourced,0.47,3.8,1.80,14.40,"Index, Little, Middle, Ring"
+Flanged ball bearing 3×7×1.4,8,"440C stainless, hardened & ground",Purchased / outsourced,0.33,2.6,1.80,14.40,"Index, Little, Ring"
+"Carpal frame, PA12-CF",1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,24.14,24.1,12.20,12.20,Palm
+Flanged ball bearing 4.4×8×1.4,4,"440C stainless, hardened & ground",Purchased / outsourced,0.35,1.4,2.20,8.80,Wrist
+"Tendon, Dyneema Ø1.0 (per link)",33,UHMWPE (Dyneema) braided tendon,Purchased / outsourced,0.01,0.5,0.20,6.60,"Forearm, Index, Little, Middle, Ring, Thumb"
+Metacarpal link (Middle),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,9.17,9.2,6.18,6.18,Middle
+"Tendon retainer strap, 301 SS",15,"440C stainless, hardened & ground",Purchased / outsourced,0.07,1.1,0.40,6.00,"Index, Little, Middle, Ring, Thumb"
+Metacarpal link (Thumb),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,8.60,8.6,5.96,5.96,Thumb
+Metacarpal link (Index),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,8.45,8.4,5.89,5.89,Index
+"Sensor wiring conduit, TPU",19,TPU 95A wiring conduit,Purchased / outsourced,0.08,1.5,0.30,5.70,"Index, Little, Middle, Palm, Ring, Thumb"
+Proximal Phalanx link (Middle),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,7.22,7.2,5.40,5.40,Middle
+"Shoulder pin Ø3 × 18 mm, 440C",9,"440C stainless, hardened & ground",Purchased / outsourced,0.96,8.6,0.60,5.40,"Index, Middle, Ring"
+Metacarpal link (Ring),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,7.15,7.1,5.37,5.37,Ring
+Proximal Phalanx link (Index),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,6.17,6.2,4.98,4.98,Index
+Proximal Phalanx link (Thumb),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,5.87,5.9,4.86,4.86,Thumb
+Proximal Phalanx link (Ring),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,5.83,5.8,4.84,4.84,Ring
+"Actuator spool deck, PA12-CF",1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,5.33,5.3,4.64,4.64,Forearm
+"M2 × 4 socket button screw, 12.9",36,"12.9 alloy steel, black oxide",Purchased / outsourced,0.10,3.5,0.12,4.32,"Index, Little, Middle, Ring, Thumb"
+Metacarpal link (Little),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,4.28,4.3,4.22,4.22,Little
+Distal Phalanx link (Thumb),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,4.23,4.2,4.20,4.20,Thumb
+Middle Phalanx link (Middle),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,4.22,4.2,4.20,4.20,Middle
+Middle Phalanx link (Index),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,3.55,3.6,3.93,3.93,Index
+Middle Phalanx link (Ring),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,3.52,3.5,3.91,3.91,Ring
+Proximal Phalanx link (Little),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,3.34,3.3,3.84,3.84,Little
+Distal Phalanx link (Middle),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,2.82,2.8,3.63,3.63,Middle
+Flanged ball bearing 3×6×1.4,2,"440C stainless, hardened & ground",Purchased / outsourced,0.24,0.5,1.80,3.60,Little
+Flanged ball bearing 3×9×1.4,2,"440C stainless, hardened & ground",Purchased / outsourced,0.56,1.1,1.80,3.60,Thumb
+Distal Phalanx link (Index),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,2.49,2.5,3.50,3.50,Index
+Distal Phalanx link (Ring),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,2.30,2.3,3.42,3.42,Ring
+Middle Phalanx link (Little),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,1.96,2.0,3.29,3.29,Little
+Distal Phalanx link (Little),1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,1.41,1.4,3.07,3.07,Little
+"Harness manifold, PA12-CF",1,PA12-CF (MJF-printed carbon-fibre nylon),In-house print,0.89,0.9,2.86,2.86,Palm
+"Shoulder pin Ø3, abduction pivot",4,"440C stainless, hardened & ground",Purchased / outsourced,0.64,2.5,0.60,2.40,"Index, Little, Middle, Ring"
+"Conduit clip, PA12",14,"12.9 alloy steel, black oxide",Purchased / outsourced,0.13,1.8,0.15,2.10,"Index, Little, Middle, Ring, Thumb"
+Status light bar (light guide + LED),1,PMMA light guide + SMD LED,Purchased / outsourced,0.01,0.0,2.00,2.00,Palm
+"Plate spacer, 7075",6,"7075-T6 aluminium, hard-anodised",Purchased / outsourced,0.03,0.2,0.30,1.80,Palm
+"Shoulder pin Ø3 × 16 mm, 440C",3,"440C stainless, hardened & ground",Purchased / outsourced,0.83,2.5,0.60,1.80,Little
+"Shoulder pin Ø3 × 20 mm, 440C",2,"440C stainless, hardened & ground",Purchased / outsourced,1.06,2.1,0.60,1.20,Thumb
+M2 standoff 12 mm (set of 4),1,"440C stainless, hardened & ground",Purchased / outsourced,2.86,2.9,1.20,1.20,Forearm
+Tendon crimp anchor,5,"440C stainless, hardened & ground",Purchased / outsourced,0.03,0.2,0.20,1.00,"Index, Little, Middle, Ring, Thumb"
+"M2 × 8 socket button screw, 12.9",8,"12.9 alloy steel, black oxide",Purchased / outsourced,0.12,0.9,0.12,0.96,Palm
+Status LED array,1,PMMA light guide + SMD LED,Purchased / outsourced,0.00,0.0,0.60,0.60,Forearm
+"M2.5 × 5 socket button screw, 12.9",4,"12.9 alloy steel, black oxide",Purchased / outsourced,0.14,0.5,0.14,0.56,Wrist
+
+TOTAL,309,,,,457.1,,1440.84,

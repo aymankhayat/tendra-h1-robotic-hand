@@ -1,0 +1,793 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TENDRA-H1 Robotic Hand</title>
+<meta name="description" content="A 25-joint tendon-driven robotic hand generated from one parametric Blender script. Explode it, pose it and inspect every part in the browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f3f3f4;
+    --ink: #0b0b0c;
+    --ink-2: #4a4a50;
+    --muted: #8a8a92;
+    --black: #050506;
+    --dark: #0e0e10;
+    --line-dark: #25252a;
+    --text-dark: #ededf0;
+    --muted-dark: #8d8d96;
+    --pink: #ff4fd8;
+    --blue: #4f7bff;
+    --violet: #8a5cff;
+    --pill: #36363a;
+    --display: "Sora", "Segoe UI", system-ui, sans-serif;
+    --body: "Manrope", "Segoe UI", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+    --gutter: clamp(16px, 5vw, 88px);
+    --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  [hidden] { display: none !important; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--page); color: var(--ink); font: 15px/1.6 var(--body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  /* Film grain over the whole page */
+  body::after { content: ""; position: fixed; inset: -50%; pointer-events: none; z-index: 60; background-image: var(--noise);
+    opacity: .07; mix-blend-mode: overlay; animation: grain 1.2s steps(6) infinite; }
+  @keyframes grain { 0% { transform: translate(0,0) } 20% { transform: translate(-3%,2%) } 40% { transform: translate(2%,-3%) }
+    60% { transform: translate(-2%,-1%) } 80% { transform: translate(3%,3%) } 100% { transform: translate(0,0) } }
+  img, video { max-width: 100%; display: block; }
+  a { color: inherit; }
+  h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; }
+  p { margin: 0; }
+  .wrap { padding-inline: var(--gutter); max-width: 1440px; margin-inline: auto; }
+
+  /* ---------- shared pieces ---------- */
+  .eyebrow { display: flex; align-items: center; gap: 10px; font: 600 11px/1 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+  .eyebrow::before { content: ""; width: 14px; height: 5px; flex: none;
+    background: radial-gradient(circle at 2.5px 2.5px, var(--pink) 2.4px, transparent 2.6px), radial-gradient(circle at 11.5px 2.5px, var(--blue) 2.4px, transparent 2.6px); }
+  .caps { text-transform: uppercase; letter-spacing: -.01em; font-weight: 600; line-height: 1.05; }
+  .pill { display: inline-flex; align-items: center; gap: 10px; padding: 11px 20px; border-radius: 999px; background: var(--pill); color: #fff; justify-self: start;
+    font: 600 12.5px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: background .25s; }
+  .pill svg { width: 14px; transition: transform .25s; }
+  .pill:hover { background: #111; } .pill:hover svg { transform: translateX(4px); }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+  .btn-glow { position: relative; display: inline-flex; align-items: center; gap: 10px; padding: 13px 28px; border-radius: 999px; color: #000;
+    font: 600 14px/1 var(--body); text-decoration: none; border: 3px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box, conic-gradient(from var(--spin, 0deg), var(--blue), var(--violet), var(--pink), var(--blue)) border-box;
+    animation: spin 4s linear infinite; }
+  .btn-glow::after { content: ""; position: absolute; inset: -8px; border-radius: inherit; z-index: -1; filter: blur(16px); opacity: .55;
+    background: conic-gradient(from var(--spin, 0deg), var(--blue), var(--violet), var(--pink), var(--blue)); animation: spin 4s linear infinite; }
+  @property --spin { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+  @keyframes spin { to { --spin: 360deg; } }
+  .ghost-link { color: #fff; font: 600 14px var(--body); text-decoration: none; opacity: .8; }
+  .ghost-link:hover { opacity: 1; }
+
+  /* Concentric glowing rings: conic gradient masked to a thin stroke */
+  .rings { position: absolute; pointer-events: none; aspect-ratio: 1; }
+  .rings i { position: absolute; inset: var(--in, 0); border-radius: 50%;
+    background: conic-gradient(from var(--a, 0deg), #3d6bff, #8a5cff 25%, #e26bff 38%, transparent 52%, transparent 70%, #3d6bff);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--w, 3px)), #000 calc(100% - var(--w, 3px) + 1px));
+            mask: radial-gradient(farthest-side, transparent calc(100% - var(--w, 3px)), #000 calc(100% - var(--w, 3px) + 1px));
+    filter: drop-shadow(0 0 10px rgba(120, 100, 255, .8)); animation: orbit var(--t, 24s) linear infinite; }
+  .rings i:nth-child(2) { --in: 9%; --a: 70deg; --t: 31s; animation-direction: reverse; }
+  .rings i:nth-child(3) { --in: 18%; --a: 150deg; --t: 38s; --w: 2px; }
+  .rings.soft i { filter: drop-shadow(0 0 6px rgba(120, 100, 255, .45)); opacity: .75; }
+  @keyframes orbit { to { transform: rotate(360deg); } }
+
+  .shot { position: relative; overflow: hidden; border-radius: 6px; background: #111; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(.2,.7,.1,1); }
+  .shot::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.22) 50%, transparent 65%); transform: translateX(-120%); transition: transform 1s ease; }
+  .shot:hover img { transform: scale(1.04); } .shot:hover::after { transform: translateX(120%); }
+  .ai-note { position: absolute; left: 10px; bottom: 10px; font: 500 10px/1 var(--mono); letter-spacing: .04em; color: rgba(255,255,255,.8);
+    background: rgba(0,0,0,.5); padding: 6px 8px; border-radius: 4px; backdrop-filter: blur(4px); }
+
+  [data-reveal] { transform: translateY(22px); transition: transform 1s cubic-bezier(.2,.7,.1,1); }
+  [data-reveal].in { transform: none; }
+
+  /* ---------- hero ---------- */
+  .hero-shell { padding: 18px clamp(8px, 2vw, 28px) 0; }
+  .hero { position: relative; overflow: hidden; background: var(--black); color: #fff; border-radius: 28px; min-height: min(780px, 94vh); isolation: isolate; display: flex; flex-direction: column; }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: radial-gradient(460px circle at var(--mx, 70%) var(--my, 40%), rgba(95, 110, 255, .16), transparent 70%); }
+  .hero-art { position: absolute; inset: 0 0 0 30%; z-index: 0; }
+  .hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%;
+    -webkit-mask: linear-gradient(90deg, transparent 0, #000 28%); mask: linear-gradient(90deg, transparent 0, #000 28%); }
+  .hero > .rings { width: 58vmin; left: 30%; bottom: -30vmin; z-index: 1; mix-blend-mode: screen; opacity: .55; }
+  nav::before { content: ""; position: absolute; inset: 0 0 -40px 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, rgba(5,5,6,.78), transparent); }
+  nav { position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px clamp(20px, 5vw, 72px); }
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 700 15px/1 var(--display); letter-spacing: .12em; }
+  .logo svg { width: 30px; height: 30px; }
+  .nav-links { display: flex; gap: clamp(14px, 2.6vw, 34px); font: 500 13px var(--body); }
+  .nav-links a { text-decoration: none; opacity: .78; } .nav-links a:hover { opacity: 1; }
+  .hero-copy { position: relative; z-index: 3; padding: clamp(24px, 8vh, 100px) clamp(20px, 5vw, 72px) 48px; max-width: 760px; display: grid; gap: 22px; }
+  .hero h1 { font-size: clamp(38px, 5.6vw, 76px); line-height: 1.02; font-weight: 600; letter-spacing: -.03em; }
+  .hero h1 em { font-style: normal; background: linear-gradient(90deg, #fff 10%, #b9b2ff 55%, #ff9bea); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero-sub { color: #a8a8b2; font-size: clamp(15px, 1.3vw, 18px); max-width: 46ch; }
+  .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 6px; }
+  .hero .eyebrow { color: #9e9eaa; }
+  .ticker { position: relative; z-index: 3; margin-top: auto; border-top: 1px solid #1c1c21; overflow: hidden; padding: 16px 0; background: rgba(5,5,6,.6);
+    -webkit-mask: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  .ticker div { display: flex; gap: 48px; width: max-content; animation: tick 38s linear infinite; font: 500 12.5px/1 var(--mono); letter-spacing: .14em; color: #7e7e88; white-space: nowrap; }
+  .ticker b { color: #fff; font-weight: 500; }
+  .ticker span::before { content: "◆"; color: var(--violet); margin-right: 14px; font-size: 9px; vertical-align: 2px; }
+  @keyframes tick { to { transform: translateX(-50%); } }
+
+  /* ---------- dark sections ---------- */
+  .dark { background: var(--dark); color: var(--text-dark);
+    background-image: radial-gradient(rgba(255,255,255,.055) 1px, transparent 1px); background-size: 24px 24px; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 96px); align-items: center; padding-block: clamp(64px, 9vw, 130px); position: relative; }
+  .split .copy { display: grid; gap: 20px; max-width: 520px; }
+  .split h2 { font-size: clamp(28px, 3.2vw, 44px); line-height: 1.12; font-weight: 600; letter-spacing: -.02em; }
+  .split p { color: var(--ink-2); font-size: 15.5px; }
+  .dark .split p, .band .split p { color: var(--muted-dark); }
+  .dark .eyebrow, .band .eyebrow { color: var(--muted-dark); }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding-top: 6px; }
+  .stats b { display: block; font: 600 clamp(24px, 2.4vw, 32px)/1.1 var(--display); color: #fff; letter-spacing: -.02em; }
+  .stats span { font: 500 11px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted-dark); }
+  .ratio-43 { aspect-ratio: 4 / 3; }
+  .ratio-1610 { aspect-ratio: 16 / 10; }
+
+  /* ---------- live lab ---------- */
+  .lab-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; padding-block: 40px 34px; }
+  .lab-head h2 { font-size: clamp(38px, 5.4vw, 72px); line-height: .98; font-weight: 700; letter-spacing: -.03em; text-transform: uppercase; }
+  .lab-head h2 span { color: transparent; -webkit-text-stroke: 1.2px #77777f; }
+  .lab-head p { color: var(--muted-dark); max-width: 44ch; }
+  .lab { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 330px; border: 1px solid var(--line-dark); border-radius: 22px; overflow: hidden;
+    height: min(760px, 86vh); background: #060608; margin-bottom: 110px; box-shadow: 0 40px 120px -40px rgba(80, 90, 255, .35); }
+  .stage { position: relative; overflow: hidden; background: radial-gradient(90% 80% at 50% 45%, #15152a 0%, #08080c 60%, #040405 100%); }
+  .stage .rings { width: 66%; left: 17%; top: 10%; opacity: .32; }
+  .stage.blueprint { background-color: #0a1a2f;
+    background-image: linear-gradient(rgba(127,230,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(127,230,255,.15) 1px, transparent 1px),
+      linear-gradient(rgba(127,230,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(127,230,255,.05) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px; }
+  .stage.blueprint .rings { display: none; }
+  canvas#view { position: relative; display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; z-index: 1; }
+  canvas#view:active { cursor: grabbing; }
+  .chips { position: absolute; z-index: 2; top: 18px; left: 20px; right: 20px; display: flex; flex-wrap: wrap; gap: 8px; pointer-events: none; }
+  .chips span { font: 500 11.5px/1 var(--mono); color: #cfcfd8; background: rgba(20,20,26,.7); border: 1px solid #26262e; padding: 7px 10px; border-radius: 999px; backdrop-filter: blur(6px); }
+  .chips b { color: #fff; font-weight: 500; }
+  .hint { position: absolute; z-index: 2; right: 18px; bottom: 16px; font: 11.5px var(--mono); color: #6f6f7a; pointer-events: none; }
+  .loading { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center; font: 600 12px var(--mono); letter-spacing: .24em; color: #7a7a86; text-transform: uppercase; }
+  svg.leaders { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
+  .labels { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+  .callout { position: absolute; font: 600 10.5px/1.1 var(--display); letter-spacing: .08em; text-transform: uppercase; color: #e6e3ff; white-space: nowrap; transform: translateY(-50%); }
+  .callout.left { transform: translate(-100%, -50%); }
+  .inspect { position: absolute; z-index: 3; left: 20px; bottom: 20px; width: min(330px, calc(100% - 40px)); color: var(--text-dark);
+    background: rgba(12,12,16,.9); border: 1px solid #2a2a33; border-radius: 12px; padding: 16px 18px 12px; display: grid; gap: 8px; backdrop-filter: blur(8px);
+    box-shadow: 0 0 0 1px rgba(138,92,255,.15), 0 20px 50px -20px rgba(79,123,255,.5); }
+  .inspect h3 { font-size: 16px; font-weight: 600; }
+  .inspect dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 3px 14px; font-size: 12.5px; }
+  .inspect dt { color: var(--muted-dark); font: 500 10.5px/1.8 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+  .inspect dd { margin: 0; font-family: var(--mono); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .text-btn { justify-self: start; padding: 6px 0; background: none; border: 0; color: #b9b2ff; font: 600 12px var(--body); cursor: pointer; }
+
+  .rail { background: #0b0b0e; border-left: 1px solid var(--line-dark); overflow-y: auto; color: var(--text-dark); }
+  .rail section { padding: 18px 22px; border-bottom: 1px solid #1c1c22; display: grid; gap: 12px; }
+  .rail h3 { font: 600 11px/1 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: #7d7d88; display: flex; align-items: center; gap: 8px; }
+  .rail h3::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 8px var(--violet); }
+  .ctrl { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; align-items: center; }
+  .ctrl + .ctrl { margin-top: 2px; }
+  .ctrl label { font-size: 13px; color: #d6d6dd; }
+  .ctrl output { font: 12px var(--mono); color: #b9b2ff; font-variant-numeric: tabular-nums; }
+  .ctrl input { grid-column: 1 / -1; }
+  input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 22px; background: transparent; margin: 0; }
+  input[type=range]::-webkit-slider-runnable-track { height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--blue), var(--violet) var(--p, 0%), #24242b var(--p, 0%)); }
+  input[type=range]::-moz-range-track { height: 3px; background: #24242b; }
+  input[type=range]::-moz-range-progress { height: 3px; background: linear-gradient(90deg, var(--blue), var(--violet)); }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; margin-top: -5.5px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 3px rgba(138,92,255,.35), 0 0 12px rgba(138,92,255,.8); }
+  input[type=range]::-moz-range-thumb { width: 13px; height: 13px; border: 0; border-radius: 50%; background: #fff; box-shadow: 0 0 12px rgba(138,92,255,.8); }
+  input[type=range]:focus-visible { outline: 1px dashed var(--violet); outline-offset: 2px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .chipbtn { font: 600 11.5px/1 var(--body); color: #dcdce3; background: #15151a; border: 1px solid #26262e; border-radius: 999px; padding: 9px 6px; cursor: pointer; transition: border-color .2s, box-shadow .2s; }
+  .chipbtn:hover { border-color: #3a3a46; }
+  .chipbtn[aria-pressed="true"] { color: #fff; border-color: transparent;
+    background: linear-gradient(#15151a, #15151a) padding-box, linear-gradient(90deg, var(--blue), var(--violet), var(--pink)) border-box; box-shadow: 0 0 16px -4px rgba(138,92,255,.7); }
+  details summary { cursor: pointer; font: 600 12px var(--body); color: #b9b2ff; list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  details[open] summary { margin-bottom: 10px; }
+
+  /* ---------- light sections ---------- */
+  .light { position: relative; overflow: hidden; }
+  .light .split .copy { max-width: 470px; }
+  .light h2.caps { font-size: clamp(30px, 3.4vw, 46px); }
+  .light .rings { width: 34vw; min-width: 260px; z-index: 0; }
+  .light .split { z-index: 1; }
+  .light .split .copy { background: radial-gradient(closest-side, rgba(243,243,244,.92), rgba(243,243,244,0)); }
+  .ring-a { left: 30%; top: 30%; } .ring-b { right: -16vw; top: 70%; }
+  .grasp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .grasp-grid .shot { aspect-ratio: 1; }
+
+  /* ---------- overlap band ---------- */
+  .band-title { position: relative; z-index: 2; font: 700 clamp(40px, 6.4vw, 92px)/.92 var(--display); letter-spacing: -.03em; text-transform: uppercase;
+    color: #a3a3aa; max-width: 1440px; margin: 70px auto calc(-0.46em); padding-inline: var(--gutter); }
+  .band { background: var(--dark); color: var(--text-dark); background-image: radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px); background-size: 24px 24px; }
+  .band .split { padding-top: clamp(90px, 10vw, 150px); }
+  .product-name { font-size: clamp(26px, 2.8vw, 38px); font-weight: 600; line-height: 1.12; }
+  .params { display: flex; flex-wrap: wrap; gap: 8px; }
+  .params code { font: 12px var(--mono); color: #d7d4ff; background: #1a1a22; border: 1px solid #2b2b36; padding: 6px 10px; border-radius: 999px; }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .compare .shot { aspect-ratio: 4 / 5; }
+  .tag { position: absolute; top: 10px; left: 10px; font: 600 10.5px/1.3 var(--mono); letter-spacing: .04em; color: #fff; background: rgba(0,0,0,.55); padding: 6px 8px; border-radius: 4px; }
+
+  /* ---------- engineering ---------- */
+  .eng { padding-block: clamp(70px, 9vw, 130px); display: grid; gap: 40px; }
+  .eng-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: end; }
+  .ortho { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .ortho .shot { aspect-ratio: 1; }
+  .kpis { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1.5px solid var(--ink); }
+  .kpis div { padding: 18px 12px 0 0; }
+  .kpis b { display: block; font: 600 clamp(26px, 3vw, 40px)/1 var(--display); letter-spacing: -.03em; }
+  .kpis span { font: 500 11px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .bom { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .bom th { text-align: left; font: 500 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding: 0 0 10px; border-bottom: 1.5px solid var(--ink); }
+  .bom td { padding: 11px 0; border-bottom: 1px solid #dcdce0; }
+  .bom .n { text-align: right; font: 13px var(--mono); font-variant-numeric: tabular-nums; padding-left: 14px; white-space: nowrap; }
+  .eng-cols { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: start; }
+  .eng-cols .copy { display: grid; gap: 18px; }
+  .eng-cols .copy p { color: var(--ink-2); }
+  .table-wrap { overflow-x: auto; }
+
+  /* ---------- film ---------- */
+  .film { padding-block: clamp(70px, 9vw, 120px); }
+  .film .frame { position: relative; border-radius: 22px; overflow: hidden; border: 1px solid #25252c; box-shadow: 0 40px 120px -40px rgba(138,92,255,.4); }
+  .film video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
+  .film-head { display: grid; gap: 14px; margin-bottom: 30px; }
+  .film-head h2 { font-size: clamp(28px, 3.2vw, 44px); font-weight: 600; letter-spacing: -.02em; }
+
+  /* ---------- gradient CTA ---------- */
+  .cta-shell { padding: clamp(40px, 7vw, 100px) clamp(8px, 2vw, 28px) 0; }
+  .cta { position: relative; overflow: hidden; border-radius: 28px; color: #fff; padding: clamp(40px, 7vw, 100px) clamp(24px, 6vw, 96px); isolation: isolate; display: grid; gap: 10px;
+    background: radial-gradient(55% 90% at 8% 20%, #ff3fa4 0%, transparent 62%), radial-gradient(40% 70% at 38% 85%, #ffa23a 0%, transparent 62%),
+      radial-gradient(45% 80% at 62% 30%, #1238ff 0%, transparent 66%), radial-gradient(40% 70% at 92% 90%, #9b3dff 0%, transparent 62%),
+      radial-gradient(35% 60% at 88% 10%, #ff5ec4 0%, transparent 60%), #3a0f4d;
+    background-size: 150% 150%; animation: drift 18s ease-in-out infinite alternate; }
+  .cta::after { content: ""; position: absolute; inset: 0; z-index: -1; background-image: var(--noise); opacity: .55; mix-blend-mode: soft-light; }
+  .cta::before { content: ""; position: absolute; inset: 0; z-index: -1; background-image: var(--noise); background-size: 160px; opacity: .25; mix-blend-mode: overlay; }
+  @keyframes drift { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
+  .cta h2 { font-size: clamp(38px, 6.2vw, 88px); line-height: 1.02; font-weight: 700; letter-spacing: -.035em; max-width: 13ch; color: rgba(255,255,255,.94); }
+  .cta .eyebrow { color: rgba(255,255,255,.85); }
+  .cta-field { margin-top: clamp(24px, 4vw, 48px); max-width: 760px; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    border: 1.5px solid rgba(255,255,255,.7); border-radius: 999px; padding: 8px 8px 8px 26px; text-decoration: none;
+    font: 500 clamp(15px, 1.8vw, 22px) var(--body); color: rgba(255,255,255,.92); transition: background .3s; overflow-wrap: anywhere; }
+  .cta-field:hover { background: rgba(255,255,255,.1); }
+  .cta-field .go { width: 58px; height: 58px; border-radius: 999px; background: #0b0b0c; display: grid; place-items: center; flex: none; }
+  .cta-field .go svg { width: 26px; color: #fff; transition: transform .3s; }
+  .cta-field:hover .go svg { transform: translateX(4px); }
+  .cta-sub { margin-top: 10px; font: 500 13px var(--mono); color: rgba(255,255,255,.85); }
+
+  footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; padding-block: 28px 40px; font: 12px var(--mono); color: var(--muted); }
+
+  @media (max-width: 980px) {
+    .split, .eng-cols { grid-template-columns: 1fr; }
+    .split.flip .copy { order: -1; }
+    .lab { grid-template-columns: 1fr; height: auto; }
+    .stage { height: 62svh; min-height: 380px; }
+    .rail { border-left: 0; border-top: 1px solid var(--line-dark); overflow: visible; }
+    .kpis { grid-template-columns: repeat(3, 1fr); row-gap: 18px; }
+    .hero { min-height: 860px; }
+    .hero-art { inset: 42% 0 0 0; }
+    .hero-art img { -webkit-mask: linear-gradient(180deg, transparent 0, #000 35%); mask: linear-gradient(180deg, transparent 0, #000 35%); }
+    .nav-links, .hint { display: none; }
+  }
+  @media (max-width: 560px) {
+    .grasp-grid, .ortho { grid-template-columns: repeat(2, 1fr); }
+    .stats { gap: 10px; }
+    .kpis { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    [data-reveal] { transform: none; }
+  }
+</style>
+
+<!-- ============================== HERO ============================== -->
+<div class="hero-shell">
+  <header class="hero" id="top">
+    <div class="hero-art"><img src="assets/ai_hero_rings.jpg" alt="TENDRA-H1 robotic hand reaching through glowing light rings"></div>
+    <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+    <nav>
+      <a class="logo" href="#top" aria-label="TENDRA home">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="13" stroke="url(#lg)" stroke-width="2"/>
+          <path d="M11 22V13m0 0 3-4m-3 4 5 2m0 0v7m0-7 4-5m-4 5 5 1.5V22" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4f7bff"/><stop offset=".55" stop-color="#8a5cff"/><stop offset="1" stop-color="#ff4fd8"/></linearGradient></defs>
+        </svg>
+        TENDRA
+      </a>
+      <div class="nav-links">
+        <a href="#engineering">Engineering</a><a href="#lab">Live Lab</a><a href="#grasps">Grasps</a><a href="#specs">Specs</a><a href="#source">Source</a>
+      </div>
+    </nav>
+    <div class="hero-copy">
+      <div class="eyebrow">TENDRA-H1 · Parametric robotic hand</div>
+      <h1>Engineered to Move <em>Like You</em></h1>
+      <p class="hero-sub">A 25-joint, tendon-driven hand generated by one Python script in Blender. Explode it, pose it and inspect every part, live in your browser.</p>
+      <div class="hero-cta">
+        <a class="btn-glow" href="#lab">Launch the Live Lab</a>
+        <a class="ghost-link" href="#film">Watch the teardown →</a>
+      </div>
+    </div>
+    <div class="ticker" aria-hidden="true"><div id="ticker"></div></div>
+  </header>
+</div>
+
+<main>
+<!-- ============================== DARK SPLIT + LIVE LAB ============================== -->
+<section class="dark" id="engineering">
+  <div class="wrap split">
+    <div class="shot ratio-43" data-reveal>
+      <img src="assets/ai_lab_engineer.jpg" alt="Engineer calibrating the robotic hand next to CAD wireframes" loading="lazy">
+      <span class="ai-note">Concept image · Higgsfield, from the Blender model</span>
+    </div>
+    <div class="copy" data-reveal>
+      <div class="eyebrow">Built around the human hand</div>
+      <h2>Real Anatomy.<br>Real Engineering.</h2>
+      <p>Link lengths come from adult hand anthropometry. Joint limits follow human range of motion, with hyperextension capped at 5–15°. The thumb sits on its own CMC ball joint, so it truly opposes instead of acting as a fifth finger.</p>
+      <div class="stats" id="hero-stats"></div>
+      <a class="pill" href="#lab">Try it live <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </div>
+  </div>
+
+  <div class="wrap" id="lab">
+    <div class="lab-head" data-reveal>
+      <h2>Live <span>Lab</span></h2>
+      <p>The real model, exported from Blender. Drag to orbit, explode the assembly, snap to a grasp and click any of its 309 parts to see material, mass and cost.</p>
+    </div>
+    <div class="lab">
+      <div class="stage" id="stage">
+        <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+        <canvas id="view" aria-label="Interactive 3D model of the TENDRA-H1 robotic hand"></canvas>
+        <svg class="leaders" id="leaders" aria-hidden="true"></svg>
+        <div class="labels" id="labels"></div>
+        <div class="chips" id="chips"></div>
+        <div class="loading" id="loading">Loading assembly</div>
+        <div class="inspect" id="inspect" hidden>
+          <h3 id="inspect-name">—</h3>
+          <dl id="inspect-dl"></dl>
+          <button class="text-btn" id="inspect-clear" type="button">Show all parts ×</button>
+        </div>
+        <div class="hint">drag to orbit · scroll to zoom · click a part</div>
+      </div>
+      <aside class="rail" aria-label="Hand controls">
+        <section>
+          <h3>Assembly</h3>
+          <div class="ctrl"><label for="explode">Explode</label><output id="explode-out">0%</output>
+            <input type="range" id="explode" min="0" max="1" step="0.001" value="0"></div>
+          <div class="grid3">
+            <button class="chipbtn" type="button" id="t-labels" aria-pressed="false">Labels</button>
+            <button class="chipbtn" type="button" id="t-blueprint" aria-pressed="false">Blueprint</button>
+            <button class="chipbtn" type="button" id="t-spin" aria-pressed="true">Turntable</button>
+          </div>
+        </section>
+        <section>
+          <h3>Grasp presets</h3>
+          <div class="grid3" id="presets"></div>
+        </section>
+        <section id="finger-controls"><h3>Fingers</h3></section>
+        <section id="thumb-controls"><h3>Thumb &amp; palm</h3></section>
+        <section>
+          <details>
+            <summary>Wrist controls +</summary>
+            <div id="wrist-controls"></div>
+          </details>
+        </section>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== LIGHT: EXPLODED + GRASPS ============================== -->
+<section class="light">
+  <div class="rings soft ring-a" aria-hidden="true"><i></i><i></i></div>
+  <div class="wrap split flip">
+    <div class="copy" data-reveal>
+      <div class="eyebrow">Exploded by design</div>
+      <h2 class="caps">Every Part,<br>Pulled Apart</h2>
+      <p>The exploded view isn't a random scatter. Each part travels by its depth in the kinematic chain, so fingertips fly furthest and the palm barely moves. Pins, bearings and screws slide out along their own hinge axes, the way a service manual shows an assembly.</p>
+      <a class="pill" href="#lab" data-explode>Explode it live <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </div>
+    <div class="shot ratio-1610" data-reveal>
+      <img src="assets/ai_exploded_drama.jpg" alt="Exploded assembly of the robotic hand under volumetric light" loading="lazy">
+      <span class="ai-note">Concept image · Higgsfield, from the Blender model</span>
+    </div>
+  </div>
+
+  <div class="rings soft ring-b" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap split" id="grasps">
+    <div class="grasp-grid" data-reveal>
+      <div class="shot"><img src="assets/grasp_open.jpg" alt="Open grasp" loading="lazy"></div>
+      <div class="shot"><img src="assets/grasp_fist.jpg" alt="Fist grasp" loading="lazy"></div>
+      <div class="shot"><img src="assets/grasp_pinch.jpg" alt="Pinch grasp" loading="lazy"></div>
+      <div class="shot"><img src="assets/grasp_point.jpg" alt="Point grasp" loading="lazy"></div>
+      <div class="shot"><img src="assets/grasp_power_grip.jpg" alt="Power grip" loading="lazy"></div>
+      <div class="shot"><img src="assets/grasp_ok_sign.jpg" alt="OK sign" loading="lazy"></div>
+    </div>
+    <div class="copy" data-reveal>
+      <div class="eyebrow">Grasp taxonomy</div>
+      <h2 class="caps">Six Grasps.<br>Zero Collisions.</h2>
+      <p>Open, Fist, Pinch, Point, Power Grip and OK Sign come from robotic grasp research. The thumb's opposition angles were found by a forward-kinematics search, and every preset passes an automated BVH interference check against the real part geometry.</p>
+      <a class="pill" href="#lab">Snap to a grasp <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== OVERLAP BAND ============================== -->
+<h2 class="band-title" data-reveal>Built From<br>One Script</h2>
+<section class="band">
+  <div class="wrap split">
+    <div class="compare" data-reveal>
+      <div class="shot"><img src="assets/hero_assembled.jpg" alt="Default four-finger hand" loading="lazy"><span class="tag">--fingers 4</span></div>
+      <div class="shot"><img src="assets/variant_3finger.jpg" alt="Three-finger long-reach variant from the same script" loading="lazy"><span class="tag">--fingers 3<br>--finger-length 1.35</span></div>
+    </div>
+    <div class="copy" data-reveal>
+      <div class="eyebrow">hand_generator.py</div>
+      <h2 class="product-name">TENDRA-H1<br>“Parametric Generator”</h2>
+      <p>Nothing was modelled by hand. Change the scale, finger length, palm width or finger count and the script rebuilds every link, joint, tendon, label and driver, then re-verifies it. The three-finger gripper on the left came out of the same file.</p>
+      <div class="params"><code>hand_scale</code><code>finger_length_ratio</code><code>palm_width_mm</code><code>num_fingers</code></div>
+      <a class="pill" href="#source" style="background:#2a2a30">See the code <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SPECS ============================== -->
+<section class="light" id="specs">
+  <div class="wrap eng">
+    <div class="eng-head" data-reveal>
+      <div style="display:grid;gap:14px"><div class="eyebrow">Datasheet</div><h2 class="caps" style="font-size:clamp(30px,3.4vw,46px)">What It Would<br>Take to Build</h2></div>
+      <a class="pill" href="assets/TENDRA-H1_datasheet.pdf">Datasheet (PDF) <svg viewBox="0 0 16 16" fill="none"><path d="M8 2v9m-4-4 4 4 4-4M3 14h10" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    </div>
+    <div class="kpis" id="kpis" data-reveal></div>
+    <div class="eng-cols">
+      <div class="ortho" data-reveal>
+        <div class="shot"><img src="assets/ortho_front.jpg" alt="Front orthographic view with dimensions" loading="lazy"></div>
+        <div class="shot"><img src="assets/ortho_side.jpg" alt="Side orthographic view with dimensions" loading="lazy"></div>
+        <div class="shot"><img src="assets/ortho_top.jpg" alt="Top orthographic view with dimensions" loading="lazy"></div>
+      </div>
+      <div class="copy" data-reveal>
+        <p>Mass is each mesh's measured volume × its material density; motors use catalogue mass. Cost uses prototype quantities: MJF-printed PA12-CF links, machined titanium and aluminium, and off-the-shelf bearings and gearmotors.</p>
+        <div class="table-wrap"><table class="bom" id="bom"></table></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FILM ============================== -->
+<section class="dark" id="film">
+  <div class="wrap film">
+    <div class="film-head" data-reveal><div class="eyebrow">Showcase · rendered in Blender EEVEE</div><h2>Explode. Reassemble. Grip.</h2></div>
+    <div class="frame" data-reveal>
+      <video src="assets/showcase_16x9.mp4" poster="assets/labeled_technical.jpg" controls muted loop playsinline preload="metadata"></video>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA ============================== -->
+<div class="cta-shell" id="source">
+  <section class="cta" data-reveal>
+    <div class="eyebrow">Open source · MIT</div>
+    <h2>Build the Hand Yourself.</h2>
+    <a class="cta-field" href="https://github.com/aymankhayat/tendra-h1-robotic-hand">
+      <span>github.com/aymankhayat/tendra-h1-robotic-hand</span>
+      <span class="go"><svg viewBox="0 0 28 16" fill="none"><path d="M1 8h24m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8"/></svg></span>
+    </a>
+    <p class="cta-sub">Needs Blender 5.2 · blender -b -P hand_generator.py</p>
+  </section>
+</div>
+</main>
+
+<footer class="wrap">
+  <span>TENDRA-H1 · designed &amp; generated by Ayman Khayat</span>
+  <span>Blender 5.2 · Cycles · three.js · Higgsfield</span>
+</footer>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script id="meta" type="application/json">__META_JSON__</script>
+<script id="spec" type="application/json">__SPEC_JSON__</script>
+<script id="glb" type="text/plain">__GLB_BASE64__</script>
+
+<script>
+// ---------- page effects (independent of the 3D viewer) ----------
+(() => {
+  const SPEC = JSON.parse(document.getElementById("spec").textContent);
+  const money = (v) => "$" + Math.round(v).toLocaleString("en-US");
+  const facts = [[SPEC.joints_total, "joints"], [SPEC.actuators_total, "tendon actuators"], [Math.round(SPEC.mass_g) + " g", "est. mass"],
+    [money(SPEC.cost_usd), "BOM cost"], [SPEC.part_count, "parts"], ["0", "interferences"], ["1", "python script"]];
+  const t = facts.map(([v, k]) => `<span><b>${v}</b> ${k.toUpperCase()}</span>`).join("");
+  document.getElementById("ticker").innerHTML = t + t;
+  document.getElementById("hero-stats").innerHTML = [[SPEC.joints_total, "Joints"], [SPEC.actuators_total, "Actuators"], [Math.round(SPEC.mass_g) + " g", "Est. mass"]]
+    .map(([v, k]) => `<div><b>${v}</b><span>${k}</span></div>`).join("");
+  document.getElementById("kpis").innerHTML = [[SPEC.joints_total, "Joints"], [SPEC.actuators_total, "Actuators"], [Math.round(SPEC.mass_g) + " g", "Est. mass"],
+    [money(SPEC.cost_usd), "Component cost"], [SPEC.part_count, "Parts"]].map(([v, k]) => `<div><b>${v}</b><span>${k}</span></div>`).join("");
+  document.getElementById("bom").innerHTML = `<thead><tr><th>Top cost drivers</th><th class="n">Qty</th><th class="n">USD</th></tr></thead><tbody>` +
+    SPEC.top_bom.map((r) => `<tr><td>${r.item}</td><td class="n">${r.qty}</td><td class="n">${money(r.cost)}</td></tr>`).join("") + "</tbody>";
+
+  const hero = document.getElementById("top");
+  hero.addEventListener("pointermove", (e) => {
+    const r = hero.getBoundingClientRect();
+    hero.style.setProperty("--mx", e.clientX - r.left + "px"); hero.style.setProperty("--my", e.clientY - r.top + "px");
+  });
+  const io = new IntersectionObserver((es) => es.forEach((en) => en.isIntersecting && en.target.classList.add("in")), { threshold: 0.12 });
+  document.querySelectorAll("[data-reveal]").forEach((el) => io.observe(el));
+})();
+</script>
+
+<script type="module">
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+
+const META = JSON.parse(document.getElementById("meta").textContent);
+const SPEC = JSON.parse(document.getElementById("spec").textContent);
+const $ = (id) => document.getElementById(id);
+const stage = $("stage"), canvas = $("view");
+
+// Callouts shown by the Labels toggle: the same key parts as the Blender label set.
+const KEY_PARTS = ["Distal Phalanx — Index", "Middle Phalanx — Index", "Proximal Phalanx — Index", "Metacarpal — Index",
+  "Tactile Sensor Pad — Middle", "MCP Abduction Yoke — Middle", "Tendon Pulley — Ring PIP",
+  "Wiring Conduit — Little Proximal Phalanx", "CMC Saddle Socket — Thumb", "Distal Phalanx — Thumb",
+  "Dorsal Frame Plate", "Carpal Frame", "Wrist Gimbal Cross", "Actuator 01 — Index Flexor", "Motor Driver PCB"];
+
+$("chips").innerHTML = [
+  [SPEC.joints_total, "joints"], [SPEC.actuators_total, "actuators"], [Math.round(SPEC.mass_g) + " g", "mass"],
+  ["$" + Math.round(SPEC.cost_usd).toLocaleString("en-US"), "BOM"], [SPEC.part_count, "parts"]
+].map(([v, k]) => `<span><b>${v}</b> ${k}</span>`).join("");
+
+// ---------- renderer / scene ----------
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.35;
+const scene = new THREE.Scene();
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+const camera = new THREE.PerspectiveCamera(32, 1, 0.01, 20);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+controls.minDistance = 0.25; controls.maxDistance = 3;
+controls.autoRotate = true; controls.autoRotateSpeed = 1.1;
+controls.addEventListener("start", () => { controls.autoRotate = false; $("t-spin").setAttribute("aria-pressed", "false"); });
+const key = new THREE.DirectionalLight(0xffffff, 2.8); key.position.set(0.9, 0.7, 0.4); scene.add(key);
+const rim = new THREE.DirectionalLight(0x9a8cff, 2.4); rim.position.set(-0.8, 0.3, -0.9); scene.add(rim);
+scene.add(new THREE.HemisphereLight(0x9fb4c8, 0x0a0d12, 0.35));
+
+// ---------- state ----------
+const state = { Explode: 0, Spread: 0, PalmCup: 0, ThumbCurl: 0, ThumbOpposition: 0, WristPitch: 0, WristYaw: 0 };
+META.fingers.forEach((f) => (state["Curl_" + f.replace(/ /g, "")] = 0));
+let mixer, actions = {}, parts = [], pickables = [], selected = null, blueprint = false, labelsOn = false;
+const blueprintFill = new THREE.MeshBasicMaterial({ color: 0x10345c, transparent: true, opacity: 0.32, depthWrite: false });
+const blueprintGhost = new THREE.MeshBasicMaterial({ color: 0x10345c, transparent: true, opacity: 0.05, depthWrite: false });
+const edgeMat = new THREE.LineBasicMaterial({ color: 0x7fe6ff, transparent: true, opacity: 0.85 });
+
+// Clip time for a control value: angles map from their range, everything else is already 0..1.
+function clipFraction(name, v) {
+  if (name === "WristPitch") return (v - META.wrist_pitch_range[0]) / (META.wrist_pitch_range[1] - META.wrist_pitch_range[0]);
+  if (name === "WristYaw") return (v - META.wrist_yaw_range[0]) / (META.wrist_yaw_range[1] - META.wrist_yaw_range[0]);
+  return v;
+}
+function apply() {
+  if (!mixer) return;
+  for (const [name, a] of Object.entries(actions)) {
+    const f = THREE.MathUtils.clamp(clipFraction(name, state[name] ?? 0), 0, 1);
+    a.time = f * a.getClip().duration * 0.9999;
+  }
+  mixer.update(0);
+}
+
+// ---------- load the embedded GLB ----------
+function b64ToBuffer(b64) {
+  const bin = atob(b64.trim()); const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return bytes.buffer;
+}
+new GLTFLoader().parse(b64ToBuffer(document.getElementById("glb").textContent), "", (gltf) => {
+  const root = gltf.scene;
+  scene.add(root);
+  root.traverse((o) => {
+    if (o.isMesh) {
+      const info = o.userData.rh_name ? o : o.parent;
+      o.userData.part = info.userData;
+      o.material.anisotropy = 0;            // exported anisotropy needs tangents three.js doesn't have (white blowout)
+      o.material.envMapIntensity = o.material.metalness > 0.5 ? 0.6 : 0.7;
+      o.userData.baseMat = o.material;
+      pickables.push(o);
+      if (info.userData.rh_name && !parts.includes(info)) parts.push(info);
+    }
+  });
+  mixer = new THREE.AnimationMixer(root);
+  // Blender's exporter samples every bone into every NLA clip. Keep only the tracks
+  // that actually move, so each control owns its joints and clips combine instead of averaging.
+  const moves = (tr) => {
+    const v = tr.values, n = tr.getValueSize();
+    for (let i = n; i < v.length; i++) if (Math.abs(v[i] - v[i % n]) > 1e-5) return true;
+    return false;
+  };
+  for (const clip of gltf.animations) {
+    clip.tracks = clip.tracks.filter(moves);
+    const a = mixer.clipAction(clip); a.play(); a.paused = true; actions[clip.name] = a;
+  }
+  state.Explode = 1; apply();          // frame on the exploded extents so exploding never leaves the view
+  frameView(root);
+  state.Explode = 0; apply();
+  window.tendra = { state, actions, apply, camera, controls, root, pickables, select };
+  $("loading").hidden = true;
+  buildLabels();
+}, (err) => { $("loading").textContent = "Couldn't load the model: " + err.message; });
+
+function frameView(root) {
+  const box = new THREE.Box3().setFromObject(root), c = box.getCenter(new THREE.Vector3()), s = box.getSize(new THREE.Vector3());
+  controls.target.copy(c).add(new THREE.Vector3(0, s.y * 0.06, 0));
+  const d = Math.max(s.x, s.y) * 1.9;
+  camera.position.set(c.x - d * 0.55, c.y + d * 0.18, c.z + d * 0.82);
+  controls.update();
+}
+
+// ---------- controls UI ----------
+function slider(parent, id, label, min, max, step, fmt) {
+  const wrap = document.createElement("div"); wrap.className = "ctrl";
+  wrap.innerHTML = `<label for="${id}">${label}</label><output id="${id}-out"></output>
+    <input type="range" id="${id}" min="${min}" max="${max}" step="${step}" value="${state[id] ?? 0}">`;
+  parent.appendChild(wrap);
+  const input = wrap.querySelector("input"), out = wrap.querySelector("output");
+  const sync = () => { const v = +input.value; out.textContent = fmt(v);
+    input.style.setProperty("--p", ((v - min) / (max - min)) * 100 + "%"); };
+  input.addEventListener("input", () => { state[id] = +input.value; sync(); apply(); });
+  sync();
+  return { input, sync };
+}
+const pct = (v) => Math.round(v * 100) + "%", deg = (v) => (v > 0 ? "+" : "") + Math.round(v) + "°";
+const sliders = {};
+const ex = $("explode");
+const syncExplode = () => { $("explode-out").textContent = pct(+ex.value); ex.style.setProperty("--p", +ex.value * 100 + "%"); };
+ex.addEventListener("input", () => { state.Explode = +ex.value; syncExplode(); apply(); });
+sliders.Explode = { input: ex, sync: syncExplode }; syncExplode();
+META.fingers.forEach((f) => { const k = "Curl_" + f.replace(/ /g, "");
+  sliders[k] = slider($("finger-controls"), k, f + " curl", 0, 1, 0.001, pct); });
+sliders.Spread = slider($("finger-controls"), "Spread", "Spread", 0, 1, 0.001, pct);
+sliders.ThumbOpposition = slider($("thumb-controls"), "ThumbOpposition", "Thumb opposition", 0, 1, 0.001, pct);
+sliders.ThumbCurl = slider($("thumb-controls"), "ThumbCurl", "Thumb curl", 0, 1, 0.001, pct);
+sliders.PalmCup = slider($("thumb-controls"), "PalmCup", "Palm cup", 0, 1, 0.001, pct);
+sliders.WristPitch = slider($("wrist-controls"), "WristPitch", "Pitch (flex + / ext −)", META.wrist_pitch_range[0], META.wrist_pitch_range[1], 0.5, deg);
+sliders.WristYaw = slider($("wrist-controls"), "WristYaw", "Yaw (radial + / ulnar −)", META.wrist_yaw_range[0], META.wrist_yaw_range[1], 0.5, deg);
+
+// Tween any subset of controls to target values.
+let tween = null;
+function animateTo(target, dur = 650) {
+  const from = { ...state }, to = { ...state, ...target };
+  const t0 = performance.now(), d = matchMedia("(prefers-reduced-motion: reduce)").matches ? 1 : dur;
+  tween = (now) => {
+    const t = Math.min(1, (now - t0) / d), e = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    for (const k of Object.keys(to)) state[k] = from[k] + (to[k] - from[k]) * e;
+    for (const [k, s] of Object.entries(sliders)) { s.input.value = state[k]; s.sync(); }
+    apply();
+    if (t >= 1) tween = null;
+  };
+}
+const presetBox = $("presets");
+Object.keys(META.presets).forEach((name) => {
+  const b = document.createElement("button"); b.type = "button"; b.className = "chipbtn"; b.textContent = name; b.setAttribute("aria-pressed", "false");
+  b.addEventListener("click", () => {
+    presetBox.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    animateTo({ ...META.presets[name], WristPitch: 0, WristYaw: 0 });
+  });
+  presetBox.appendChild(b);
+});
+document.querySelectorAll("[data-explode]").forEach((a) => a.addEventListener("click", () => setTimeout(() => animateTo({ Explode: 1 }, 1400), 600)));
+
+function toggle(btn, fn) { btn.addEventListener("click", () => { const on = btn.getAttribute("aria-pressed") !== "true";
+  btn.setAttribute("aria-pressed", String(on)); fn(on); }); }
+toggle($("t-labels"), (on) => { labelsOn = on; $("labels").hidden = !on; $("leaders").style.display = on ? "" : "none"; });
+toggle($("t-blueprint"), (on) => { blueprint = on; stage.classList.toggle("blueprint", on); restyle(); });
+toggle($("t-spin"), (on) => { controls.autoRotate = on; });
+$("labels").hidden = true; $("leaders").style.display = "none";
+
+// ---------- blueprint + isolate styling ----------
+function edgesFor(m) {
+  if (!m.userData.edges) { m.userData.edges = new THREE.LineSegments(new THREE.EdgesGeometry(m.geometry, 28), edgeMat); m.add(m.userData.edges); }
+  return m.userData.edges;
+}
+function restyle() {
+  for (const m of pickables) {
+    const dim = selected && m.userData.part !== selected.userData;
+    if (blueprint) {
+      edgesFor(m).visible = !dim;
+      m.material = dim ? blueprintGhost : blueprintFill;
+    } else {
+      if (selected && !dim) edgesFor(m).visible = true;       // outline the inspected part against the ghosts
+      else if (m.userData.edges) m.userData.edges.visible = false;
+      if (dim) {
+        m.userData.ghost ??= new THREE.MeshBasicMaterial({ color: 0x3a3a70, transparent: true, opacity: 0.07, depthWrite: false });
+        m.material = m.userData.ghost;
+      } else m.material = m.userData.baseMat;
+    }
+  }
+}
+
+// ---------- click to isolate ----------
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+let down = null;
+canvas.addEventListener("pointerdown", (e) => (down = [e.clientX, e.clientY]));
+canvas.addEventListener("pointerup", (e) => {
+  if (!down || Math.hypot(e.clientX - down[0], e.clientY - down[1]) > 5) return;
+  const r = canvas.getBoundingClientRect();
+  ndc.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+  ray.setFromCamera(ndc, camera);
+  const hit = ray.intersectObjects(pickables, false)[0];
+  select(hit ? hit.object : null);
+});
+$("inspect-clear").addEventListener("click", () => select(null));
+addEventListener("keydown", (e) => { if (e.key === "Escape") select(null); });
+function select(mesh) {
+  selected = mesh && mesh.userData.part?.rh_name ? mesh : null;
+  $("inspect").hidden = !selected;
+  if (selected) {
+    controls.autoRotate = false; $("t-spin").setAttribute("aria-pressed", "false");
+    const u = selected.userData.part;
+    $("inspect-name").textContent = u.rh_name;
+    const rows = [["Material", u.rh_material], ["Mass", u.rh_mass_g != null ? u.rh_mass_g.toFixed(2) + " g" : "—"],
+      ["Cost", u.rh_cost_usd != null ? "$" + u.rh_cost_usd.toFixed(2) : "—"], ["Assembly", u.rh_assembly], ["BOM line", u.rh_bom]];
+    if (u.rh_dof) rows.splice(3, 0, ["DOF", u.rh_dof]);
+    $("inspect-dl").innerHTML = rows.map(([k, v]) => `<dt>${k}</dt><dd>${v ?? "—"}</dd>`).join("");
+  }
+  restyle();
+}
+
+// ---------- callouts ----------
+let labelItems = [];
+function buildLabels() {
+  const box = $("labels");
+  labelItems = KEY_PARTS.map((name) => parts.find((p) => p.userData.rh_name === name)).filter(Boolean).map((obj) => {
+    const el = document.createElement("div"); el.className = "callout"; el.textContent = obj.userData.rh_name;
+    box.appendChild(el); return { obj, el };
+  });
+}
+const tmp = new THREE.Vector3(), bb = new THREE.Box3();
+function drawLabels() {
+  if (!labelsOn || !labelItems.length) return;
+  const w = stage.clientWidth, h = stage.clientHeight, narrow = w < 560;
+  const pts = labelItems.map((it) => {
+    bb.setFromObject(it.obj).getCenter(tmp).project(camera);
+    return { it, x: (tmp.x * 0.5 + 0.5) * w, y: (-tmp.y * 0.5 + 0.5) * h };
+  });
+  const cx = pts.reduce((s, p) => s + p.x, 0) / pts.length;
+  const colGap = narrow ? 0.02 : 0.1;
+  let svg = "";
+  for (const side of [-1, 1]) {
+    const col = pts.filter((p) => (p.x >= cx) === (side > 0)).sort((a, b) => a.y - b.y);
+    const textW = Math.max(0, ...col.map((p) => p.it.el.offsetWidth)) + 16;
+    const colX = side > 0 ? Math.min(w - textW, Math.max(...col.map((p) => p.x), cx) + w * colGap)
+                          : Math.max(textW, Math.min(...col.map((p) => p.x), cx) - w * colGap);
+    let lastY = -Infinity;
+    for (const p of col) {
+      const y = Math.max(p.y, lastY + 17); lastY = y;
+      p.it.el.style.left = colX + (side > 0 ? 8 : -8) + "px"; p.it.el.style.top = y + "px";
+      p.it.el.classList.toggle("left", side < 0);
+      svg += `<polyline points="${p.x},${p.y} ${colX},${y}" fill="none" stroke="url(#lead)" stroke-width="1" opacity=".85"/>` +
+             `<circle cx="${p.x}" cy="${p.y}" r="2.4" fill="#b9b2ff"/>`;
+    }
+  }
+  $("leaders").innerHTML = `<defs><linearGradient id="lead"><stop stop-color="#4f7bff"/><stop offset="1" stop-color="#ff4fd8"/></linearGradient></defs>` + svg;
+}
+
+// ---------- loop (renders only while the lab is on screen) ----------
+let visible = true;
+new IntersectionObserver((es) => (visible = es[0].isIntersecting)).observe(stage);
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+}
+new ResizeObserver(resize).observe(stage);
+renderer.setAnimationLoop((now) => {
+  if (!visible) return;
+  if (tween) tween(now);
+  controls.update();
+  renderer.render(scene, camera);
+  drawLabels();
+});
+</script>

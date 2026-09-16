@@ -1,0 +1,25 @@
+# Python / Blender
+__pycache__/
+*.pyc
+*.blend1
+*.blend2
+
+# Scratch outputs (reproducible with pipeline.py)
+output/preview/
+output/logs/
+output/robotic_hand.blend
+
+# Local tooling / secrets
+.claude/
+.env*
+node_modules/
+.vercel/
+.netlify/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+.agents/
+output/higgsfield/
+skills-lock.json

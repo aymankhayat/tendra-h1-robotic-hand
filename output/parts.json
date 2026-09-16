@@ -1,0 +1,2783 @@
+[
+ {
+  "name": "Metacarpal \u2014 Index",
+  "bom": "Metacarpal link (Index)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Index",
+  "volume_cm3": 7.544,
+  "mass_g": 8.45,
+  "cost_usd": 5.89
+ },
+ {
+  "name": "Flexor Tendon \u2014 Index Metacarpal",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Index",
+  "volume_cm3": 0.035,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Retainer \u2014 Index Metacarpal",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Proximal Phalanx \u2014 Index",
+  "bom": "Proximal Phalanx link (Index)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Index",
+  "volume_cm3": 5.505,
+  "mass_g": 6.17,
+  "cost_usd": 4.98
+ },
+ {
+  "name": "Flexor Tendon \u2014 Index Proximal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Index",
+  "volume_cm3": 0.031,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Index MCP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.063,
+  "mass_g": 0.49,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Index Proximal Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Index Proximal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Index",
+  "volume_cm3": 0.099,
+  "mass_g": 0.12,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Index Proximal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Middle Phalanx \u2014 Index",
+  "bom": "Middle Phalanx link (Index)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Index",
+  "volume_cm3": 3.171,
+  "mass_g": 3.55,
+  "cost_usd": 3.93
+ },
+ {
+  "name": "Flexor Tendon \u2014 Index Middle Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Index",
+  "volume_cm3": 0.018,
+  "mass_g": 0.02,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Index PIP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.063,
+  "mass_g": 0.49,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Index Middle Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Index Middle Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Index",
+  "volume_cm3": 0.041,
+  "mass_g": 0.05,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Index Middle Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Distal Phalanx \u2014 Index",
+  "bom": "Distal Phalanx link (Index)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Index",
+  "volume_cm3": 2.227,
+  "mass_g": 2.49,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Flexor Tendon \u2014 Index Distal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Index",
+  "volume_cm3": 0.003,
+  "mass_g": 0.0,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Index DIP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.063,
+  "mass_g": 0.49,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Wiring Conduit \u2014 Index Distal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Index",
+  "volume_cm3": 0.016,
+  "mass_g": 0.02,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Index Distal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Tactile Sensor Pad \u2014 Index",
+  "bom": "Capacitive tactile sensor pad",
+  "material": "Capacitive tactile array, silicone skin",
+  "assembly": "Index",
+  "volume_cm3": 0.051,
+  "mass_g": 0.07,
+  "cost_usd": 14.0
+ },
+ {
+  "name": "Fingertip Cap \u2014 Index",
+  "bom": "Fingertip cap, Ti-6Al-4V",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Index",
+  "volume_cm3": 0.153,
+  "mass_g": 0.68,
+  "cost_usd": 9.0
+ },
+ {
+  "name": "Tendon Anchor \u2014 Index",
+  "bom": "Tendon crimp anchor",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.004,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "MCP Abduction Yoke \u2014 Index",
+  "bom": "MCP abduction yoke, Ti-6Al-4V (Index)",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Index",
+  "volume_cm3": 1.473,
+  "mass_g": 6.53,
+  "cost_usd": 36.0
+ },
+ {
+  "name": "Abduction Pivot Pin \u2014 Index",
+  "bom": "Shoulder pin \u00d83, abduction pivot",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.084,
+  "mass_g": 0.65,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Abduction Bearing \u2014 Index Dorsal",
+  "bom": "Flanged thrust bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.066,
+  "mass_g": 0.51,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Pivot Screw \u2014 Index Dorsal",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Abduction Bearing \u2014 Index Palmar",
+  "bom": "Flanged thrust bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.066,
+  "mass_g": 0.51,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Pivot Screw \u2014 Index Palmar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Flexor Tendon \u2014 Index MCP Yoke",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Index",
+  "volume_cm3": 0.009,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Joint Pin \u2014 Index MCP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.124,
+  "mass_g": 0.96,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Index MCP Radial",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.058,
+  "mass_g": 0.45,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Index MCP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.014,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Index MCP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Index",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Index MCP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.058,
+  "mass_g": 0.45,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Index MCP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.014,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Index MCP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Index",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Index PIP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.124,
+  "mass_g": 0.96,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Index PIP Radial",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.058,
+  "mass_g": 0.45,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Index PIP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.014,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Index PIP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Index",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Index PIP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.058,
+  "mass_g": 0.45,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Index PIP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.014,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Index PIP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Index",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Index DIP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.124,
+  "mass_g": 0.96,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Index DIP Radial",
+  "bom": "Flanged ball bearing 3\u00d77\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.048,
+  "mass_g": 0.37,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Index DIP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.012,
+  "mass_g": 0.09,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Index DIP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Index",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Index DIP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d77\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Index",
+  "volume_cm3": 0.048,
+  "mass_g": 0.37,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Index DIP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Index",
+  "volume_cm3": 0.012,
+  "mass_g": 0.09,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Index DIP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Index",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Metacarpal \u2014 Middle",
+  "bom": "Metacarpal link (Middle)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Middle",
+  "volume_cm3": 8.183,
+  "mass_g": 9.17,
+  "cost_usd": 6.18
+ },
+ {
+  "name": "Flexor Tendon \u2014 Middle Metacarpal",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Middle",
+  "volume_cm3": 0.034,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Retainer \u2014 Middle Metacarpal",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Proximal Phalanx \u2014 Middle",
+  "bom": "Proximal Phalanx link (Middle)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Middle",
+  "volume_cm3": 6.45,
+  "mass_g": 7.22,
+  "cost_usd": 5.4
+ },
+ {
+  "name": "Flexor Tendon \u2014 Middle Proximal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Middle",
+  "volume_cm3": 0.034,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Middle MCP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.074,
+  "mass_g": 0.58,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Middle Proximal Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Middle Proximal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Middle",
+  "volume_cm3": 0.112,
+  "mass_g": 0.14,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Middle Proximal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Middle Phalanx \u2014 Middle",
+  "bom": "Middle Phalanx link (Middle)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Middle",
+  "volume_cm3": 3.768,
+  "mass_g": 4.22,
+  "cost_usd": 4.2
+ },
+ {
+  "name": "Flexor Tendon \u2014 Middle Middle Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Middle",
+  "volume_cm3": 0.021,
+  "mass_g": 0.02,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Middle PIP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.074,
+  "mass_g": 0.58,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Middle Middle Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Middle Middle Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Middle",
+  "volume_cm3": 0.05,
+  "mass_g": 0.06,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Middle Middle Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Distal Phalanx \u2014 Middle",
+  "bom": "Distal Phalanx link (Middle)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Middle",
+  "volume_cm3": 2.52,
+  "mass_g": 2.82,
+  "cost_usd": 3.63
+ },
+ {
+  "name": "Flexor Tendon \u2014 Middle Distal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Middle",
+  "volume_cm3": 0.003,
+  "mass_g": 0.0,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Middle DIP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.074,
+  "mass_g": 0.58,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Wiring Conduit \u2014 Middle Distal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Middle",
+  "volume_cm3": 0.017,
+  "mass_g": 0.02,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Middle Distal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Tactile Sensor Pad \u2014 Middle",
+  "bom": "Capacitive tactile sensor pad",
+  "material": "Capacitive tactile array, silicone skin",
+  "assembly": "Middle",
+  "volume_cm3": 0.058,
+  "mass_g": 0.07,
+  "cost_usd": 14.0
+ },
+ {
+  "name": "Fingertip Cap \u2014 Middle",
+  "bom": "Fingertip cap, Ti-6Al-4V",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Middle",
+  "volume_cm3": 0.168,
+  "mass_g": 0.75,
+  "cost_usd": 9.0
+ },
+ {
+  "name": "Tendon Anchor \u2014 Middle",
+  "bom": "Tendon crimp anchor",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.004,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "MCP Abduction Yoke \u2014 Middle",
+  "bom": "MCP abduction yoke, Ti-6Al-4V (Middle)",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Middle",
+  "volume_cm3": 1.568,
+  "mass_g": 6.95,
+  "cost_usd": 36.0
+ },
+ {
+  "name": "Abduction Pivot Pin \u2014 Middle",
+  "bom": "Shoulder pin \u00d83, abduction pivot",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.085,
+  "mass_g": 0.66,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Abduction Bearing \u2014 Middle Dorsal",
+  "bom": "Flanged thrust bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.071,
+  "mass_g": 0.55,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Pivot Screw \u2014 Middle Dorsal",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Abduction Bearing \u2014 Middle Palmar",
+  "bom": "Flanged thrust bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.071,
+  "mass_g": 0.55,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Pivot Screw \u2014 Middle Palmar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Flexor Tendon \u2014 Middle MCP Yoke",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Middle",
+  "volume_cm3": 0.009,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Joint Pin \u2014 Middle MCP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.127,
+  "mass_g": 0.99,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Middle MCP Radial",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.063,
+  "mass_g": 0.49,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Middle MCP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.015,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Middle MCP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Middle",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Middle MCP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.063,
+  "mass_g": 0.49,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Middle MCP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.015,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Middle MCP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Middle",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Middle PIP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.127,
+  "mass_g": 0.99,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Middle PIP Radial",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.063,
+  "mass_g": 0.49,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Middle PIP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.015,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Middle PIP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Middle",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Middle PIP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.063,
+  "mass_g": 0.49,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Middle PIP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.015,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Middle PIP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Middle",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Middle DIP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.127,
+  "mass_g": 0.99,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Middle DIP Radial",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.052,
+  "mass_g": 0.4,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Middle DIP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Middle DIP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Middle",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Middle DIP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Middle",
+  "volume_cm3": 0.052,
+  "mass_g": 0.4,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Middle DIP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Middle",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Middle DIP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Middle",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Metacarpal \u2014 Ring",
+  "bom": "Metacarpal link (Ring)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Ring",
+  "volume_cm3": 6.38,
+  "mass_g": 7.15,
+  "cost_usd": 5.37
+ },
+ {
+  "name": "Flexor Tendon \u2014 Ring Metacarpal",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Ring",
+  "volume_cm3": 0.031,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Retainer \u2014 Ring Metacarpal",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Proximal Phalanx \u2014 Ring",
+  "bom": "Proximal Phalanx link (Ring)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Ring",
+  "volume_cm3": 5.203,
+  "mass_g": 5.83,
+  "cost_usd": 4.84
+ },
+ {
+  "name": "Flexor Tendon \u2014 Ring Proximal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Ring",
+  "volume_cm3": 0.032,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Ring MCP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.053,
+  "mass_g": 0.41,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Ring Proximal Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Ring Proximal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Ring",
+  "volume_cm3": 0.104,
+  "mass_g": 0.13,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Ring Proximal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Middle Phalanx \u2014 Ring",
+  "bom": "Middle Phalanx link (Ring)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Ring",
+  "volume_cm3": 3.144,
+  "mass_g": 3.52,
+  "cost_usd": 3.91
+ },
+ {
+  "name": "Flexor Tendon \u2014 Ring Middle Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Ring",
+  "volume_cm3": 0.02,
+  "mass_g": 0.02,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Ring PIP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.053,
+  "mass_g": 0.41,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Ring Middle Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.009,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Ring Middle Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Ring",
+  "volume_cm3": 0.049,
+  "mass_g": 0.06,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Ring Middle Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Distal Phalanx \u2014 Ring",
+  "bom": "Distal Phalanx link (Ring)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Ring",
+  "volume_cm3": 2.049,
+  "mass_g": 2.3,
+  "cost_usd": 3.42
+ },
+ {
+  "name": "Flexor Tendon \u2014 Ring Distal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Ring",
+  "volume_cm3": 0.003,
+  "mass_g": 0.0,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Ring DIP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.053,
+  "mass_g": 0.41,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Wiring Conduit \u2014 Ring Distal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Ring",
+  "volume_cm3": 0.017,
+  "mass_g": 0.02,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Ring Distal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Tactile Sensor Pad \u2014 Ring",
+  "bom": "Capacitive tactile sensor pad",
+  "material": "Capacitive tactile array, silicone skin",
+  "assembly": "Ring",
+  "volume_cm3": 0.05,
+  "mass_g": 0.07,
+  "cost_usd": 14.0
+ },
+ {
+  "name": "Fingertip Cap \u2014 Ring",
+  "bom": "Fingertip cap, Ti-6Al-4V",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Ring",
+  "volume_cm3": 0.148,
+  "mass_g": 0.65,
+  "cost_usd": 9.0
+ },
+ {
+  "name": "Tendon Anchor \u2014 Ring",
+  "bom": "Tendon crimp anchor",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.004,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "MCP Abduction Yoke \u2014 Ring",
+  "bom": "MCP abduction yoke, Ti-6Al-4V (Ring)",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Ring",
+  "volume_cm3": 1.381,
+  "mass_g": 6.12,
+  "cost_usd": 36.0
+ },
+ {
+  "name": "Abduction Pivot Pin \u2014 Ring",
+  "bom": "Shoulder pin \u00d83, abduction pivot",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.083,
+  "mass_g": 0.64,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Abduction Bearing \u2014 Ring Dorsal",
+  "bom": "Flanged thrust bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.061,
+  "mass_g": 0.48,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Pivot Screw \u2014 Ring Dorsal",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Abduction Bearing \u2014 Ring Palmar",
+  "bom": "Flanged thrust bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.061,
+  "mass_g": 0.48,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Pivot Screw \u2014 Ring Palmar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Flexor Tendon \u2014 Ring MCP Yoke",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Ring",
+  "volume_cm3": 0.009,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Joint Pin \u2014 Ring MCP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.121,
+  "mass_g": 0.94,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Ring MCP Radial",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.054,
+  "mass_g": 0.42,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Ring MCP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.013,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Ring MCP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Ring",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Ring MCP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.054,
+  "mass_g": 0.42,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Ring MCP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.013,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Ring MCP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Ring",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Ring PIP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.121,
+  "mass_g": 0.94,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Ring PIP Radial",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.054,
+  "mass_g": 0.42,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Ring PIP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.013,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Ring PIP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Ring",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Ring PIP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.054,
+  "mass_g": 0.42,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Ring PIP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.013,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Ring PIP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Ring",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Ring DIP",
+  "bom": "Shoulder pin \u00d83 \u00d7 18 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.121,
+  "mass_g": 0.94,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Ring DIP Radial",
+  "bom": "Flanged ball bearing 3\u00d77\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.044,
+  "mass_g": 0.34,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Ring DIP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.011,
+  "mass_g": 0.09,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Ring DIP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Ring",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Ring DIP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d77\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Ring",
+  "volume_cm3": 0.044,
+  "mass_g": 0.34,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Ring DIP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Ring",
+  "volume_cm3": 0.011,
+  "mass_g": 0.09,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Ring DIP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Ring",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Metacarpal \u2014 Little",
+  "bom": "Metacarpal link (Little)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Little",
+  "volume_cm3": 3.824,
+  "mass_g": 4.28,
+  "cost_usd": 4.22
+ },
+ {
+  "name": "Flexor Tendon \u2014 Little Metacarpal",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Little",
+  "volume_cm3": 0.027,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Retainer \u2014 Little Metacarpal",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.008,
+  "mass_g": 0.06,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Proximal Phalanx \u2014 Little",
+  "bom": "Proximal Phalanx link (Little)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Little",
+  "volume_cm3": 2.985,
+  "mass_g": 3.34,
+  "cost_usd": 3.84
+ },
+ {
+  "name": "Flexor Tendon \u2014 Little Proximal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Little",
+  "volume_cm3": 0.025,
+  "mass_g": 0.02,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Little MCP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.022,
+  "mass_g": 0.17,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Little Proximal Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.008,
+  "mass_g": 0.06,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Little Proximal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Little",
+  "volume_cm3": 0.077,
+  "mass_g": 0.09,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Little Proximal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Middle Phalanx \u2014 Little",
+  "bom": "Middle Phalanx link (Little)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Little",
+  "volume_cm3": 1.747,
+  "mass_g": 1.96,
+  "cost_usd": 3.29
+ },
+ {
+  "name": "Flexor Tendon \u2014 Little Middle Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Little",
+  "volume_cm3": 0.015,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Little PIP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.022,
+  "mass_g": 0.17,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Little Middle Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.008,
+  "mass_g": 0.06,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Little Middle Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Little",
+  "volume_cm3": 0.029,
+  "mass_g": 0.04,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Little Middle Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Distal Phalanx \u2014 Little",
+  "bom": "Distal Phalanx link (Little)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Little",
+  "volume_cm3": 1.258,
+  "mass_g": 1.41,
+  "cost_usd": 3.07
+ },
+ {
+  "name": "Flexor Tendon \u2014 Little Distal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Little",
+  "volume_cm3": 0.002,
+  "mass_g": 0.0,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Little DIP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.022,
+  "mass_g": 0.17,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Wiring Conduit \u2014 Little Distal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Little",
+  "volume_cm3": 0.016,
+  "mass_g": 0.02,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Little Distal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Tactile Sensor Pad \u2014 Little",
+  "bom": "Capacitive tactile sensor pad",
+  "material": "Capacitive tactile array, silicone skin",
+  "assembly": "Little",
+  "volume_cm3": 0.037,
+  "mass_g": 0.05,
+  "cost_usd": 14.0
+ },
+ {
+  "name": "Fingertip Cap \u2014 Little",
+  "bom": "Fingertip cap, Ti-6Al-4V",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Little",
+  "volume_cm3": 0.11,
+  "mass_g": 0.49,
+  "cost_usd": 9.0
+ },
+ {
+  "name": "Tendon Anchor \u2014 Little",
+  "bom": "Tendon crimp anchor",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.004,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "MCP Abduction Yoke \u2014 Little",
+  "bom": "MCP abduction yoke, Ti-6Al-4V (Little)",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Little",
+  "volume_cm3": 1.043,
+  "mass_g": 4.62,
+  "cost_usd": 36.0
+ },
+ {
+  "name": "Abduction Pivot Pin \u2014 Little",
+  "bom": "Shoulder pin \u00d83, abduction pivot",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.077,
+  "mass_g": 0.6,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Abduction Bearing \u2014 Little Dorsal",
+  "bom": "Flanged thrust bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.044,
+  "mass_g": 0.34,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Pivot Screw \u2014 Little Dorsal",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Abduction Bearing \u2014 Little Palmar",
+  "bom": "Flanged thrust bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.044,
+  "mass_g": 0.34,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Pivot Screw \u2014 Little Palmar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.012,
+  "mass_g": 0.1,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Flexor Tendon \u2014 Little MCP Yoke",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Little",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Joint Pin \u2014 Little MCP",
+  "bom": "Shoulder pin \u00d83 \u00d7 16 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.108,
+  "mass_g": 0.83,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Little MCP Radial",
+  "bom": "Flanged ball bearing 3\u00d77\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.039,
+  "mass_g": 0.3,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Little MCP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.01,
+  "mass_g": 0.08,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Little MCP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Little",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Little MCP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d77\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.039,
+  "mass_g": 0.3,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Little MCP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.01,
+  "mass_g": 0.08,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Little MCP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Little",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Little PIP",
+  "bom": "Shoulder pin \u00d83 \u00d7 16 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.108,
+  "mass_g": 0.83,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Little PIP Radial",
+  "bom": "Flanged ball bearing 3\u00d77\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.039,
+  "mass_g": 0.3,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Little PIP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.01,
+  "mass_g": 0.08,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Little PIP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Little",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Little PIP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d77\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.039,
+  "mass_g": 0.3,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Little PIP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.01,
+  "mass_g": 0.08,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Little PIP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Little",
+  "volume_cm3": 0.007,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Little DIP",
+  "bom": "Shoulder pin \u00d83 \u00d7 16 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.108,
+  "mass_g": 0.83,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Little DIP Radial",
+  "bom": "Flanged ball bearing 3\u00d76\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.031,
+  "mass_g": 0.24,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Little DIP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.008,
+  "mass_g": 0.06,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Little DIP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Little",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Little DIP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d76\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Little",
+  "volume_cm3": 0.031,
+  "mass_g": 0.24,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Little DIP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Little",
+  "volume_cm3": 0.008,
+  "mass_g": 0.06,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Little DIP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Little",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Metacarpal \u2014 Thumb",
+  "bom": "Metacarpal link (Thumb)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Thumb",
+  "volume_cm3": 7.682,
+  "mass_g": 8.6,
+  "cost_usd": 5.96
+ },
+ {
+  "name": "Flexor Tendon \u2014 Thumb Metacarpal",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Thumb",
+  "volume_cm3": 0.024,
+  "mass_g": 0.02,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Retainer \u2014 Thumb Metacarpal",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.01,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Proximal Phalanx \u2014 Thumb",
+  "bom": "Proximal Phalanx link (Thumb)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Thumb",
+  "volume_cm3": 5.246,
+  "mass_g": 5.87,
+  "cost_usd": 4.86
+ },
+ {
+  "name": "Flexor Tendon \u2014 Thumb Proximal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Thumb",
+  "volume_cm3": 0.024,
+  "mass_g": 0.02,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Thumb MCP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.098,
+  "mass_g": 0.76,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Thumb Proximal Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.01,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Thumb Proximal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Thumb",
+  "volume_cm3": 0.066,
+  "mass_g": 0.08,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Thumb Proximal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Thumb",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Distal Phalanx \u2014 Thumb",
+  "bom": "Distal Phalanx link (Thumb)",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Thumb",
+  "volume_cm3": 3.774,
+  "mass_g": 4.23,
+  "cost_usd": 4.2
+ },
+ {
+  "name": "Flexor Tendon \u2014 Thumb Distal Phalanx",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Thumb",
+  "volume_cm3": 0.004,
+  "mass_g": 0.0,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Tendon Pulley \u2014 Thumb IP",
+  "bom": "Grooved tendon pulley, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.098,
+  "mass_g": 0.76,
+  "cost_usd": 3.5
+ },
+ {
+  "name": "Tendon Retainer \u2014 Thumb Distal Phalanx",
+  "bom": "Tendon retainer strap, 301 SS",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.01,
+  "mass_g": 0.07,
+  "cost_usd": 0.4
+ },
+ {
+  "name": "Wiring Conduit \u2014 Thumb Distal Phalanx",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Thumb",
+  "volume_cm3": 0.023,
+  "mass_g": 0.03,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Conduit Clip \u2014 Thumb Distal Phalanx",
+  "bom": "Conduit clip, PA12",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Thumb",
+  "volume_cm3": 0.017,
+  "mass_g": 0.13,
+  "cost_usd": 0.15
+ },
+ {
+  "name": "Tactile Sensor Pad \u2014 Thumb",
+  "bom": "Capacitive tactile sensor pad",
+  "material": "Capacitive tactile array, silicone skin",
+  "assembly": "Thumb",
+  "volume_cm3": 0.091,
+  "mass_g": 0.12,
+  "cost_usd": 14.0
+ },
+ {
+  "name": "Fingertip Cap \u2014 Thumb",
+  "bom": "Fingertip cap, Ti-6Al-4V",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Thumb",
+  "volume_cm3": 0.245,
+  "mass_g": 1.09,
+  "cost_usd": 9.0
+ },
+ {
+  "name": "Tendon Anchor \u2014 Thumb",
+  "bom": "Tendon crimp anchor",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.004,
+  "mass_g": 0.03,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Joint Pin \u2014 Thumb MCP",
+  "bom": "Shoulder pin \u00d83 \u00d7 20 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.137,
+  "mass_g": 1.06,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Thumb MCP Radial",
+  "bom": "Flanged ball bearing 3\u00d79\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.072,
+  "mass_g": 0.56,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Thumb MCP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Thumb",
+  "volume_cm3": 0.016,
+  "mass_g": 0.13,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Thumb MCP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Thumb",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Thumb MCP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d79\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.072,
+  "mass_g": 0.56,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Thumb MCP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Thumb",
+  "volume_cm3": 0.016,
+  "mass_g": 0.13,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Thumb MCP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Thumb",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Joint Pin \u2014 Thumb IP",
+  "bom": "Shoulder pin \u00d83 \u00d7 20 mm, 440C",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.137,
+  "mass_g": 1.06,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "Bearing \u2014 Thumb IP Radial",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.06,
+  "mass_g": 0.46,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Thumb IP Radial",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Thumb",
+  "volume_cm3": 0.014,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Thumb IP Radial",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Thumb",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "Bearing \u2014 Thumb IP Ulnar",
+  "bom": "Flanged ball bearing 3\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Thumb",
+  "volume_cm3": 0.06,
+  "mass_g": 0.46,
+  "cost_usd": 1.8
+ },
+ {
+  "name": "Retaining Screw \u2014 Thumb IP Ulnar",
+  "bom": "M2 \u00d7 4 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Thumb",
+  "volume_cm3": 0.014,
+  "mass_g": 0.11,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Status Light Ring \u2014 Thumb IP Ulnar",
+  "bom": "Joint status light ring (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Thumb",
+  "volume_cm3": 0.008,
+  "mass_g": 0.01,
+  "cost_usd": 0.9
+ },
+ {
+  "name": "CMC Saddle Socket \u2014 Thumb",
+  "bom": "CMC socket, Ti-6Al-4V",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Thumb",
+  "volume_cm3": 0.473,
+  "mass_g": 2.09,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Thumb Mount Bracket",
+  "bom": "Thumb mount bracket, 7075",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Palm",
+  "volume_cm3": 1.166,
+  "mass_g": 3.28,
+  "cost_usd": 22.0
+ },
+ {
+  "name": "Carpal Frame",
+  "bom": "Carpal frame, PA12-CF",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Palm",
+  "volume_cm3": 21.556,
+  "mass_g": 24.14,
+  "cost_usd": 12.2
+ },
+ {
+  "name": "Dorsal Frame Plate",
+  "bom": "Dorsal frame plate, 7075-T6 CNC",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Palm",
+  "volume_cm3": 5.681,
+  "mass_g": 15.96,
+  "cost_usd": 28.0
+ },
+ {
+  "name": "Plate Spacer \u2014 Index 1",
+  "bom": "Plate spacer, 7075",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Palm",
+  "volume_cm3": 0.004,
+  "mass_g": 0.01,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Screw \u2014 Index 1",
+  "bom": "M2 \u00d7 8 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Palm",
+  "volume_cm3": 0.015,
+  "mass_g": 0.12,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Plate Spacer \u2014 Index 2",
+  "bom": "Plate spacer, 7075",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Palm",
+  "volume_cm3": 0.004,
+  "mass_g": 0.01,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Screw \u2014 Index 2",
+  "bom": "M2 \u00d7 8 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Palm",
+  "volume_cm3": 0.015,
+  "mass_g": 0.12,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Wiring Conduit \u2014 Index Metacarpal",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Palm",
+  "volume_cm3": 0.115,
+  "mass_g": 0.14,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Screw \u2014 Middle 1",
+  "bom": "M2 \u00d7 8 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Palm",
+  "volume_cm3": 0.015,
+  "mass_g": 0.12,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Plate Screw \u2014 Middle 2",
+  "bom": "M2 \u00d7 8 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Palm",
+  "volume_cm3": 0.015,
+  "mass_g": 0.12,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Wiring Conduit \u2014 Middle Metacarpal",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Palm",
+  "volume_cm3": 0.113,
+  "mass_g": 0.14,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Spacer \u2014 Ring 1",
+  "bom": "Plate spacer, 7075",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Palm",
+  "volume_cm3": 0.007,
+  "mass_g": 0.02,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Screw \u2014 Ring 1",
+  "bom": "M2 \u00d7 8 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Palm",
+  "volume_cm3": 0.015,
+  "mass_g": 0.12,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Plate Spacer \u2014 Ring 2",
+  "bom": "Plate spacer, 7075",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Palm",
+  "volume_cm3": 0.007,
+  "mass_g": 0.02,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Screw \u2014 Ring 2",
+  "bom": "M2 \u00d7 8 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Palm",
+  "volume_cm3": 0.015,
+  "mass_g": 0.12,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Wiring Conduit \u2014 Ring Metacarpal",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Palm",
+  "volume_cm3": 0.099,
+  "mass_g": 0.12,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Spacer \u2014 Little 1",
+  "bom": "Plate spacer, 7075",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Palm",
+  "volume_cm3": 0.021,
+  "mass_g": 0.06,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Screw \u2014 Little 1",
+  "bom": "M2 \u00d7 8 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Palm",
+  "volume_cm3": 0.015,
+  "mass_g": 0.12,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Plate Spacer \u2014 Little 2",
+  "bom": "Plate spacer, 7075",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Palm",
+  "volume_cm3": 0.021,
+  "mass_g": 0.06,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Plate Screw \u2014 Little 2",
+  "bom": "M2 \u00d7 8 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Palm",
+  "volume_cm3": 0.015,
+  "mass_g": 0.12,
+  "cost_usd": 0.12
+ },
+ {
+  "name": "Wiring Conduit \u2014 Little Metacarpal",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Palm",
+  "volume_cm3": 0.082,
+  "mass_g": 0.1,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Wiring Harness Manifold",
+  "bom": "Harness manifold, PA12-CF",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Palm",
+  "volume_cm3": 0.792,
+  "mass_g": 0.89,
+  "cost_usd": 2.86
+ },
+ {
+  "name": "Status Light Bar",
+  "bom": "Status light bar (light guide + LED)",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Palm",
+  "volume_cm3": 0.012,
+  "mass_g": 0.01,
+  "cost_usd": 2.0
+ },
+ {
+  "name": "Wiring Trunk \u2014 Palm",
+  "bom": "Sensor wiring conduit, TPU",
+  "material": "TPU 95A wiring conduit",
+  "assembly": "Palm",
+  "volume_cm3": 0.132,
+  "mass_g": 0.16,
+  "cost_usd": 0.3
+ },
+ {
+  "name": "Wrist Gimbal Cross",
+  "bom": "Wrist universal-joint cross, Ti-6Al-4V",
+  "material": "Ti-6Al-4V, CNC machined",
+  "assembly": "Wrist",
+  "volume_cm3": 1.895,
+  "mass_g": 8.4,
+  "cost_usd": 58.0
+ },
+ {
+  "name": "Wrist Yoke \u2014 Palm Side",
+  "bom": "Wrist yoke (palm side), 7075-T6",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Wrist",
+  "volume_cm3": 0.78,
+  "mass_g": 2.19,
+  "cost_usd": 34.0
+ },
+ {
+  "name": "Wrist Yoke \u2014 Forearm Side",
+  "bom": "Wrist yoke (forearm side), 7075-T6",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Wrist",
+  "volume_cm3": 0.869,
+  "mass_g": 2.44,
+  "cost_usd": 34.0
+ },
+ {
+  "name": "Wrist Pitch Bearing +",
+  "bom": "Flanged ball bearing 4.4\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Wrist",
+  "volume_cm3": 0.045,
+  "mass_g": 0.35,
+  "cost_usd": 2.2
+ },
+ {
+  "name": "Wrist Pitch Screw +",
+  "bom": "M2.5 \u00d7 5 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Wrist",
+  "volume_cm3": 0.017,
+  "mass_g": 0.14,
+  "cost_usd": 0.14
+ },
+ {
+  "name": "Wrist Pitch Bearing \u2212",
+  "bom": "Flanged ball bearing 4.4\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Wrist",
+  "volume_cm3": 0.045,
+  "mass_g": 0.35,
+  "cost_usd": 2.2
+ },
+ {
+  "name": "Wrist Pitch Screw \u2212",
+  "bom": "M2.5 \u00d7 5 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Wrist",
+  "volume_cm3": 0.017,
+  "mass_g": 0.14,
+  "cost_usd": 0.14
+ },
+ {
+  "name": "Wrist Yaw Bearing +",
+  "bom": "Flanged ball bearing 4.4\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Wrist",
+  "volume_cm3": 0.045,
+  "mass_g": 0.35,
+  "cost_usd": 2.2
+ },
+ {
+  "name": "Wrist Yaw Screw +",
+  "bom": "M2.5 \u00d7 5 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Wrist",
+  "volume_cm3": 0.017,
+  "mass_g": 0.14,
+  "cost_usd": 0.14
+ },
+ {
+  "name": "Wrist Yaw Bearing \u2212",
+  "bom": "Flanged ball bearing 4.4\u00d78\u00d71.4",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Wrist",
+  "volume_cm3": 0.045,
+  "mass_g": 0.35,
+  "cost_usd": 2.2
+ },
+ {
+  "name": "Wrist Yaw Screw \u2212",
+  "bom": "M2.5 \u00d7 5 socket button screw, 12.9",
+  "material": "12.9 alloy steel, black oxide",
+  "assembly": "Wrist",
+  "volume_cm3": 0.017,
+  "mass_g": 0.14,
+  "cost_usd": 0.14
+ },
+ {
+  "name": "Wrist Flange",
+  "bom": "Wrist flange, 7075-T6 CNC",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Forearm",
+  "volume_cm3": 7.782,
+  "mass_g": 21.87,
+  "cost_usd": 26.0
+ },
+ {
+  "name": "Forearm Side Rails",
+  "bom": "Forearm side rail pair, 7075-T6",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Forearm",
+  "volume_cm3": 8.706,
+  "mass_g": 24.46,
+  "cost_usd": 38.0
+ },
+ {
+  "name": "Spool Deck",
+  "bom": "Actuator spool deck, PA12-CF",
+  "material": "PA12-CF (MJF-printed carbon-fibre nylon)",
+  "assembly": "Forearm",
+  "volume_cm3": 4.761,
+  "mass_g": 5.33,
+  "cost_usd": 4.64
+ },
+ {
+  "name": "Actuator 01 \u2014 Index Flexor",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 01",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 01",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 02 \u2014 Middle Flexor",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 02",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 02",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 03 \u2014 Ring Flexor",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 03",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 03",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 04 \u2014 Little Flexor",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 04",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 04",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 05 \u2014 Thumb Flexor",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 05",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 05",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 06 \u2014 Thumb Opposition",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 06",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 06",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 07 \u2014 Finger Spread",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 07",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 07",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 08 \u2014 Palm Cup",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 08",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 08",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 09 \u2014 Wrist Pitch",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 09",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 09",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Actuator 10 \u2014 Wrist Yaw",
+  "bom": "Coreless DC gearmotor \u00d89.5, 136:1, magnetic encoder",
+  "material": "Coreless DC gearmotor + magnetic encoder",
+  "assembly": "Forearm",
+  "volume_cm3": 2.743,
+  "mass_g": 13.5,
+  "cost_usd": 42.0
+ },
+ {
+  "name": "Tendon Spool \u2014 Actuator 10",
+  "bom": "Tendon spool, 7075 anodised",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.147,
+  "mass_g": 1.14,
+  "cost_usd": 4.0
+ },
+ {
+  "name": "Tendon Lead \u2014 Actuator 10",
+  "bom": "Tendon, Dyneema \u00d81.0 (per link)",
+  "material": "UHMWPE (Dyneema) braided tendon",
+  "assembly": "Forearm",
+  "volume_cm3": 0.006,
+  "mass_g": 0.01,
+  "cost_usd": 0.2
+ },
+ {
+  "name": "Motor Driver PCB",
+  "bom": "10-channel motor driver + sensor hub PCB",
+  "material": "FR-4 4-layer PCB, assembled",
+  "assembly": "Forearm",
+  "volume_cm3": 2.568,
+  "mass_g": 4.75,
+  "cost_usd": 120.0
+ },
+ {
+  "name": "PCB Status LEDs",
+  "bom": "Status LED array",
+  "material": "PMMA light guide + SMD LED",
+  "assembly": "Forearm",
+  "volume_cm3": 0.003,
+  "mass_g": 0.0,
+  "cost_usd": 0.6
+ },
+ {
+  "name": "PCB Standoffs",
+  "bom": "M2 standoff 12 mm (set of 4)",
+  "material": "440C stainless, hardened & ground",
+  "assembly": "Forearm",
+  "volume_cm3": 0.369,
+  "mass_g": 2.86,
+  "cost_usd": 1.2
+ },
+ {
+  "name": "Forearm Base Plate",
+  "bom": "Forearm base plate, 7075-T6 CNC",
+  "material": "7075-T6 aluminium, hard-anodised",
+  "assembly": "Forearm",
+  "volume_cm3": 7.782,
+  "mass_g": 21.87,
+  "cost_usd": 24.0
+ }
+]
